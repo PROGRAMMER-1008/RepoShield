@@ -1,0 +1,793 @@
+* Getting build dependencies for wheel...
+running egg_info
+writing reposhield.egg-info\PKG-INFO
+writing dependency_links to reposhield.egg-info\dependency_links.txt
+writing entry points to reposhield.egg-info\entry_points.txt
+writing requirements to reposhield.egg-info\requires.txt
+writing top-level names to reposhield.egg-info\top_level.txt
+reading manifest file 'reposhield.egg-info\SOURCES.txt'
+writing manifest file 'reposhield.egg-info\SOURCES.txt'
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+copying reposhield\action_policy.py -> build\lib\reposhield
+copying reposhield\contracts.py -> build\lib\reposhield
+copying reposhield\server\action_service.py -> build\lib\reposhield\server
+copying reposhield\server\admin.py -> build\lib\reposhield\server
+copying reposhield\server\config.py -> build\lib\reposhield\server
+copying reposhield\server\coordinator.py -> build\lib\reposhield\server
+copying reposhield\server\durable.py -> build\lib\reposhield\server
+copying reposhield\server\schema_v2.py -> build\lib\reposhield\server
+copying reposhield\server\migrations\versions\0002_action_policy.py -> build\lib\reposhield\server\migrations\versions
+running egg_info
+writing reposhield.egg-info\PKG-INFO
+writing dependency_links to reposhield.egg-info\dependency_links.txt
+writing entry points to reposhield.egg-info\entry_points.txt
+writing requirements to reposhield.egg-info\requires.txt
+writing top-level names to reposhield.egg-info\top_level.txt
+reading manifest file 'reposhield.egg-info\SOURCES.txt'
+writing manifest file 'reposhield.egg-info\SOURCES.txt'
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\reposhield
+copying build\lib\reposhield\actions.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\action_policy.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\analyzer.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\audit.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\checks.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\cli.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\contracts.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\coverage_map.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\demo.py -> build\bdist.win-amd64\wheel\.\reposhield
+creating build\bdist.win-amd64\wheel\reposhield\demo_data
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main
+copying build\lib\reposhield\demo_data\main\.reposhield.yml -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\analytics
+copying build\lib\reposhield\demo_data\main\analytics\client.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\analytics
+copying build\lib\reposhield\demo_data\main\analytics\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\analytics
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\analytics\__pycache__
+copying build\lib\reposhield\demo_data\main\analytics\__pycache__\client.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\analytics\__pycache__
+copying build\lib\reposhield\demo_data\main\analytics\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\analytics\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\api
+copying build\lib\reposhield\demo_data\main\api\routes.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\api
+copying build\lib\reposhield\demo_data\main\api\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\api
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\api\__pycache__
+copying build\lib\reposhield\demo_data\main\api\__pycache__\routes.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\api\__pycache__
+copying build\lib\reposhield\demo_data\main\api\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\api\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\auth
+copying build\lib\reposhield\demo_data\main\auth\login.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth
+copying build\lib\reposhield\demo_data\main\auth\tokens.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth
+copying build\lib\reposhield\demo_data\main\auth\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\auth\__pycache__
+copying build\lib\reposhield\demo_data\main\auth\__pycache__\login.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth\__pycache__
+copying build\lib\reposhield\demo_data\main\auth\__pycache__\tokens.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth\__pycache__
+copying build\lib\reposhield\demo_data\main\auth\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\auth\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\common
+copying build\lib\reposhield\demo_data\main\common\money.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\common
+copying build\lib\reposhield\demo_data\main\common\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\common
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\common\__pycache__
+copying build\lib\reposhield\demo_data\main\common\__pycache__\money.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\common\__pycache__
+copying build\lib\reposhield\demo_data\main\common\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\common\__pycache__
+copying build\lib\reposhield\demo_data\main\conftest.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\orders
+copying build\lib\reposhield\demo_data\main\orders\service.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\orders
+copying build\lib\reposhield\demo_data\main\orders\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\orders
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\orders\__pycache__
+copying build\lib\reposhield\demo_data\main\orders\__pycache__\service.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\orders\__pycache__
+copying build\lib\reposhield\demo_data\main\orders\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\orders\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\payments
+copying build\lib\reposhield\demo_data\main\payments\database.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments
+copying build\lib\reposhield\demo_data\main\payments\refund.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments
+copying build\lib\reposhield\demo_data\main\payments\service.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments
+copying build\lib\reposhield\demo_data\main\payments\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\payments\__pycache__\database.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\payments\__pycache__\refund.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\payments\__pycache__\service.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\payments\__pycache__\__init__.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\pytest.ini -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main
+copying build\lib\reposhield\demo_data\main\README.md -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main
+copying build\lib\reposhield\demo_data\main\requirements.txt -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\analytics
+copying build\lib\reposhield\demo_data\main\tests\analytics\test_analytics.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\analytics
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\analytics\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\analytics\__pycache__\test_analytics.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\analytics\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\api
+copying build\lib\reposhield\demo_data\main\tests\api\test_routes.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\api
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\api\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\api\__pycache__\test_routes.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\api\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\auth
+copying build\lib\reposhield\demo_data\main\tests\auth\test_login.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\auth
+copying build\lib\reposhield\demo_data\main\tests\auth\test_tokens.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\auth
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\auth\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\auth\__pycache__\test_login.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\auth\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\auth\__pycache__\test_tokens.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\auth\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\common
+copying build\lib\reposhield\demo_data\main\tests\common\test_money.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\common
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\common\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\common\__pycache__\test_money.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\common\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\orders
+copying build\lib\reposhield\demo_data\main\tests\orders\test_orders.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\orders
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\orders\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\orders\__pycache__\test_orders.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\orders\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\payments
+copying build\lib\reposhield\demo_data\main\tests\payments\test_database.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments
+copying build\lib\reposhield\demo_data\main\tests\payments\test_payment_service.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments
+copying build\lib\reposhield\demo_data\main\tests\payments\test_refund.py -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\tests\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\payments\__pycache__\test_database.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\payments\__pycache__\test_payment_service.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments\__pycache__
+copying build\lib\reposhield\demo_data\main\tests\payments\__pycache__\test_refund.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\tests\payments\__pycache__
+creating build\bdist.win-amd64\wheel\reposhield\demo_data\main\__pycache__
+copying build\lib\reposhield\demo_data\main\__pycache__\conftest.cpython-310.pyc -> build\bdist.win-amd64\wheel\.\reposhield\demo_data\main\__pycache__
+copying build\lib\reposhield\doctor.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\engine.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\gitutil.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\graph.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\models.py -> build\bdist.win-amd64\wheel\.\reposhield
+creating build\bdist.win-amd64\wheel\reposhield\plugin
+copying build\lib\reposhield\plugin\rs_pytest_plugin.py -> build\bdist.win-amd64\wheel\.\reposhield\plugin
+copying build\lib\reposhield\policy.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\report.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\sandbox.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\selector.py -> build\bdist.win-amd64\wheel\.\reposhield
+creating build\bdist.win-amd64\wheel\reposhield\server
+copying build\lib\reposhield\server\action_service.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\admin.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\app.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\config.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\coordinator.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\dashboard.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\db.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\durable.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\github.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\identities.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+creating build\bdist.win-amd64\wheel\reposhield\server\migrations
+copying build\lib\reposhield\server\migrations\env.py -> build\bdist.win-amd64\wheel\.\reposhield\server\migrations
+creating build\bdist.win-amd64\wheel\reposhield\server\migrations\versions
+copying build\lib\reposhield\server\migrations\versions\0001_foundation.py -> build\bdist.win-amd64\wheel\.\reposhield\server\migrations\versions
+copying build\lib\reposhield\server\migrations\versions\0002_action_policy.py -> build\bdist.win-amd64\wheel\.\reposhield\server\migrations\versions
+copying build\lib\reposhield\server\migrations\versions\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\server\migrations\versions
+copying build\lib\reposhield\server\migrations\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\server\migrations
+copying build\lib\reposhield\server\process_worker.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\schema_v1.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\schema_v2.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\worker.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\server\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield\server
+copying build\lib\reposhield\util.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\verdict.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\__init__.py -> build\bdist.win-amd64\wheel\.\reposhield
+copying build\lib\reposhield\__main__.py -> build\bdist.win-amd64\wheel\.\reposhield
+running install_egg_info
+Copying reposhield.egg-info to build\bdist.win-amd64\wheel\.\reposhield-0.2.1-py3.10.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\reposhield-0.2.1.dist-info\WHEEL
+creating 'C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-03-dist\\.tmp-3u_8bp_i\\reposhield-0.2.1-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+adding 'reposhield/__init__.py'
+adding 'reposhield/__main__.py'
+adding 'reposhield/action_policy.py'
+adding 'reposhield/actions.py'
+adding 'reposhield/analyzer.py'
+adding 'reposhield/audit.py'
+adding 'reposhield/checks.py'
+adding 'reposhield/cli.py'
+adding 'reposhield/contracts.py'
+adding 'reposhield/coverage_map.py'
+adding 'reposhield/demo.py'
+adding 'reposhield/doctor.py'
+adding 'reposhield/engine.py'
+adding 'reposhield/gitutil.py'
+adding 'reposhield/graph.py'
+adding 'reposhield/models.py'
+adding 'reposhield/policy.py'
+adding 'reposhield/report.py'
+adding 'reposhield/sandbox.py'
+adding 'reposhield/selector.py'
+adding 'reposhield/util.py'
+adding 'reposhield/verdict.py'
+adding 'reposhield/demo_data/main/.reposhield.yml'
+adding 'reposhield/demo_data/main/README.md'
+adding 'reposhield/demo_data/main/conftest.py'
+adding 'reposhield/demo_data/main/pytest.ini'
+adding 'reposhield/demo_data/main/requirements.txt'
+adding 'reposhield/demo_data/main/__pycache__/conftest.cpython-310.pyc'
+adding 'reposhield/demo_data/main/analytics/__init__.py'
+adding 'reposhield/demo_data/main/analytics/client.py'
+adding 'reposhield/demo_data/main/analytics/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/analytics/__pycache__/client.cpython-310.pyc'
+adding 'reposhield/demo_data/main/api/__init__.py'
+adding 'reposhield/demo_data/main/api/routes.py'
+adding 'reposhield/demo_data/main/api/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/api/__pycache__/routes.cpython-310.pyc'
+adding 'reposhield/demo_data/main/auth/__init__.py'
+adding 'reposhield/demo_data/main/auth/login.py'
+adding 'reposhield/demo_data/main/auth/tokens.py'
+adding 'reposhield/demo_data/main/auth/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/auth/__pycache__/login.cpython-310.pyc'
+adding 'reposhield/demo_data/main/auth/__pycache__/tokens.cpython-310.pyc'
+adding 'reposhield/demo_data/main/common/__init__.py'
+adding 'reposhield/demo_data/main/common/money.py'
+adding 'reposhield/demo_data/main/common/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/common/__pycache__/money.cpython-310.pyc'
+adding 'reposhield/demo_data/main/orders/__init__.py'
+adding 'reposhield/demo_data/main/orders/service.py'
+adding 'reposhield/demo_data/main/orders/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/orders/__pycache__/service.cpython-310.pyc'
+adding 'reposhield/demo_data/main/payments/__init__.py'
+adding 'reposhield/demo_data/main/payments/database.py'
+adding 'reposhield/demo_data/main/payments/refund.py'
+adding 'reposhield/demo_data/main/payments/service.py'
+adding 'reposhield/demo_data/main/payments/__pycache__/__init__.cpython-310.pyc'
+adding 'reposhield/demo_data/main/payments/__pycache__/database.cpython-310.pyc'
+adding 'reposhield/demo_data/main/payments/__pycache__/refund.cpython-310.pyc'
+adding 'reposhield/demo_data/main/payments/__pycache__/service.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/analytics/test_analytics.py'
+adding 'reposhield/demo_data/main/tests/analytics/__pycache__/test_analytics.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/api/test_routes.py'
+adding 'reposhield/demo_data/main/tests/api/__pycache__/test_routes.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/auth/test_login.py'
+adding 'reposhield/demo_data/main/tests/auth/test_tokens.py'
+adding 'reposhield/demo_data/main/tests/auth/__pycache__/test_login.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/auth/__pycache__/test_tokens.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/common/test_money.py'
+adding 'reposhield/demo_data/main/tests/common/__pycache__/test_money.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/orders/test_orders.py'
+adding 'reposhield/demo_data/main/tests/orders/__pycache__/test_orders.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/payments/test_database.py'
+adding 'reposhield/demo_data/main/tests/payments/test_payment_service.py'
+adding 'reposhield/demo_data/main/tests/payments/test_refund.py'
+adding 'reposhield/demo_data/main/tests/payments/__pycache__/test_database.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/payments/__pycache__/test_payment_service.cpython-310.pyc'
+adding 'reposhield/demo_data/main/tests/payments/__pycache__/test_refund.cpython-310.pyc'
+adding 'reposhield/plugin/rs_pytest_plugin.py'
+adding 'reposhield/server/__init__.py'
+adding 'reposhield/server/action_service.py'
+adding 'reposhield/server/admin.py'
+adding 'reposhield/server/app.py'
+adding 'reposhield/server/config.py'
+adding 'reposhield/server/coordinator.py'
+adding 'reposhield/server/dashboard.py'
+adding 'reposhield/server/db.py'
+adding 'reposhield/server/durable.py'
+adding 'reposhield/server/github.py'
+adding 'reposhield/server/identities.py'
+adding 'reposhield/server/process_worker.py'
+adding 'reposhield/server/schema_v1.py'
+adding 'reposhield/server/schema_v2.py'
+adding 'reposhield/server/worker.py'
+adding 'reposhield/server/migrations/__init__.py'
+adding 'reposhield/server/migrations/env.py'
+adding 'reposhield/server/migrations/versions/0001_foundation.py'
+adding 'reposhield/server/migrations/versions/0002_action_policy.py'
+adding 'reposhield/server/migrations/versions/__init__.py'
+adding 'reposhield-0.2.1.dist-info/METADATA'
+adding 'reposhield-0.2.1.dist-info/WHEEL'
+adding 'reposhield-0.2.1.dist-info/entry_points.txt'
+adding 'reposhield-0.2.1.dist-info/top_level.txt'
+adding 'reposhield-0.2.1.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+WARNING Package 'reposhield.demo_data.main.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.analytics.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.analytics.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.analytics.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.analytics.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.analytics.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.api.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.api.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.api.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.api.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.api.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.auth.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.auth.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.auth.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.auth.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.auth.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.common.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.common.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.common.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.common.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.common.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.orders.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.orders.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.orders.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.orders.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.orders.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.payments.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.payments.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.payments.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.payments.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.payments.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.analytics.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.analytics.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.analytics.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.analytics.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.analytics.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.api.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.api.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.api.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.api.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.api.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.auth.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.auth.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.auth.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.auth.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.auth.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.common.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.common.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.common.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.common.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.common.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.orders.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.orders.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.orders.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.orders.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.orders.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+WARNING Package 'reposhield.demo_data.main.tests.payments.__pycache__' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'reposhield.demo_data.main.tests.payments.__pycache__' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'reposhield.demo_data.main.tests.payments.__pycache__' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'reposhield.demo_data.main.tests.payments.__pycache__' to be distributed and are
+        already explicitly excluding 'reposhield.demo_data.main.tests.payments.__pycache__' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+Successfully built reposhield-0.2.1-py3-none-any.whl

@@ -1,0 +1,19 @@
+* Getting build dependencies for wheel...
+C:\Users\pjpra\AppData\Local\Programs\Python\Python310\lib\site-packages\setuptools\config\pyprojecttoml.py:108: _BetaConfiguration: Support for `[tool.setuptools]` in `pyproject.toml` is still *beta*.
+  warnings.warn(msg, _BetaConfiguration)
+running egg_info
+writing reposhield.egg-info\PKG-INFO
+writing dependency_links to reposhield.egg-info\dependency_links.txt
+writing entry points to reposhield.egg-info\entry_points.txt
+writing requirements to reposhield.egg-info\requires.txt
+writing top-level names to reposhield.egg-info\top_level.txt
+reading manifest file 'reposhield.egg-info\SOURCES.txt'
+writing manifest file 'reposhield.egg-info\SOURCES.txt'
+
+ERROR Unmet dependencies (checked against C:\Users\pjpra\AppData\Local\Programs\Python\Python310\python.exe):
+	setuptools>=68
+		wanted: >=68
+		found: 65.5.0
+	wheel
+		wanted: any
+		found: not installed

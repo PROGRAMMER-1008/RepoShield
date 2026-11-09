@@ -1,0 +1,32 @@
+[
+  {
+    "files": 200,
+    "edges": 998,
+    "changed": 5,
+    "full_rebuild_s": 0.129,
+    "incremental_s": 0.075,
+    "speedup_x": 1.7,
+    "parsed": 5,
+    "identical_to_full_rebuild": true
+  },
+  {
+    "files": 200,
+    "edges": 995,
+    "changed": 5,
+    "full_rebuild_s": 0.118,
+    "incremental_s": 0.074,
+    "speedup_x": 1.6,
+    "parsed": 5,
+    "identical_to_full_rebuild": true
+  },
+  {
+    "files": 200,
+    "edges": 995,
+    "changed": 5,
+    "full_rebuild_s": 0.126,
+    "incremental_s": 0.105,
+    "speedup_x": 1.2,
+    "parsed": 5,
+    "identical_to_full_rebuild": true
+  }
+]

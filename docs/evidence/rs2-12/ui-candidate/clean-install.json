@@ -1,0 +1,25 @@
+{
+  "candidate": "ui-candidate-20261017",
+  "wheel_sha256": "165c7d2e60b0c6ae3a5473783927e21d84f02aaaa94bbf7c1720d01a85a1154a",
+  "installation": "fresh Windows CPython 3.10 venv; --no-index --require-hashes; no system-site-packages",
+  "installed_package": "C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-release\\ui-candidate-20261017\\clean-env\\Lib\\site-packages\\reposhield\\__init__.py",
+  "versions_match_all_37_wheels": true,
+  "pip_check": "No broken requirements found",
+  "tests": {
+    "initial_passed": 211,
+    "initial_failed": 1,
+    "initial_seconds": "136.165",
+    "non_ui_passed": 179,
+    "final_ui_passed": 34,
+    "final_ui_seconds": "16.474",
+    "distinct_passing_cases": 213,
+    "warning": "Starlette/AnyIO deprecation",
+    "correction": "Boundary test now explicitly covers registered repository and installed package roots; rejection and bearer-login assertions preserved. Intermediate rerun also failed before the boundary assumption was identified."
+  },
+  "signed_recovery_rounds": 2,
+  "limitations": [
+    "Same Windows host, not fresh-machine acceptance",
+    "Not a full-suite rerun",
+    "Dedicated Linux, remaining live GitHub races, independent operator and live asset recovery pending"
+  ]
+}

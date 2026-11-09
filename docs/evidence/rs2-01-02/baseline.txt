@@ -1,0 +1,114 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.3.3, pluggy-1.6.0 -- C:\Users\pjpra\Desktop\reposhield\.venv-rs2\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\pjpra\Desktop\reposhield
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 112 items
+
+tests/test_analyzer_graph.py::test_parse_tests_asserts_and_skips PASSED  [  0%]
+tests/test_analyzer_graph.py::test_syntax_error_is_reported_not_raised PASSED [  1%]
+tests/test_analyzer_graph.py::test_import_resolution_relative_package_and_implicit PASSED [  2%]
+tests/test_analyzer_graph.py::test_src_layout_roots PASSED               [  3%]
+tests/test_analyzer_graph.py::test_dynamic_imports PASSED                [  4%]
+tests/test_analyzer_graph.py::test_impact_is_reverse_reachability_with_paths PASSED [  5%]
+tests/test_analyzer_graph.py::test_incremental_update_equals_full_rebuild_property PASSED [  6%]
+tests/test_audit_actions_sandbox.py::test_chain_intact PASSED            [  7%]
+tests/test_audit_actions_sandbox.py::test_chain_detects_modified_event PASSED [  8%]
+tests/test_audit_actions_sandbox.py::test_chain_detects_deleted_and_reordered_events PASSED [  8%]
+tests/test_audit_actions_sandbox.py::test_log_resumes_chain_after_reopen PASSED [  9%]
+tests/test_audit_actions_sandbox.py::test_unknown_never_becomes_pass PASSED [ 10%]
+tests/test_audit_actions_sandbox.py::test_authorize_and_verify_roundtrip PASSED [ 11%]
+tests/test_audit_actions_sandbox.py::test_default_deny_and_deny_list_and_traversal PASSED [ 12%]
+tests/test_audit_actions_sandbox.py::test_token_is_bound_to_exact_action PASSED [ 13%]
+tests/test_audit_actions_sandbox.py::test_expired_replayed_forged_and_policy_changed PASSED [ 14%]
+tests/test_audit_actions_sandbox.py::test_ttl_is_capped_by_policy PASSED [ 15%]
+tests/test_audit_actions_sandbox.py::test_execute_runs_only_authorized_command PASSED [ 16%]
+tests/test_audit_actions_sandbox.py::test_sandbox_timeout_kills_process_group FAILED [ 16%]
+tests/test_audit_actions_sandbox.py::test_sandbox_caps_output_and_scrubs_env PASSED [ 17%]
+tests/test_audit_actions_sandbox.py::test_docker_command_is_hardened PASSED [ 18%]
+tests/test_audit_actions_sandbox.py::test_windows_env_is_scrubbed_but_keeps_what_python_needs PASSED [ 19%]
+tests/test_audit_actions_sandbox.py::test_auto_backend_needs_docker_image_not_just_docker PASSED [ 20%]
+tests/test_audit_actions_sandbox.py::test_windows_absolute_style_paths_are_denied PASSED [ 21%]
+tests/test_e2e.py::test_scenario_verdicts[pr/safe-refactor-PASS] PASSED  [ 22%]
+tests/test_e2e.py::test_scenario_verdicts[pr/analytics-leak-BLOCK] PASSED [ 23%]
+tests/test_e2e.py::test_scenario_verdicts[pr/transitive-leak-BLOCK] PASSED [ 24%]
+tests/test_e2e.py::test_scenario_verdicts[pr/secret-and-workflow-BLOCK] PASSED [ 25%]
+tests/test_e2e.py::test_scenario_verdicts[pr/weakened-tests-REVIEW_REQUIRED] PASSED [ 25%]
+tests/test_e2e.py::test_scenario_verdicts[pr/real-bug-BLOCK] PASSED      [ 26%]
+tests/test_e2e.py::test_scenario_verdicts[pr/policy-tamper-BLOCK] PASSED [ 27%]
+tests/test_e2e.py::test_scenario_verdicts[pr/docs-only-PASS] PASSED      [ 28%]
+tests/test_e2e.py::test_scenario_verdicts[pr/new-dependency-REVIEW_REQUIRED] PASSED [ 29%]
+tests/test_e2e.py::test_scenario_verdicts[pr/prod-config-REVIEW_REQUIRED] PASSED [ 30%]
+tests/test_e2e.py::test_safe_change_uses_selective_tests_and_incremental_graph PASSED [ 31%]
+tests/test_e2e.py::test_blocking_static_finding_skips_test_execution PASSED [ 32%]
+tests/test_e2e.py::test_real_regression_is_caught_by_sandboxed_tests PASSED [ 33%]
+tests/test_e2e.py::test_policy_is_read_from_base_so_agent_cannot_delete_it PASSED [ 33%]
+tests/test_e2e.py::test_weakened_tests_flagged_even_though_all_tests_pass PASSED [ 34%]
+tests/test_e2e.py::test_secret_is_redacted_in_evidence PASSED            [ 35%]
+tests/test_e2e.py::test_runs_are_idempotent_and_reproducible PASSED      [ 36%]
+tests/test_e2e.py::test_tampering_with_stored_audit_log_is_detected PASSED [ 37%]
+tests/test_e2e.py::test_untrusted_head_policy_requires_review PASSED     [ 38%]
+tests/test_hardening.py::test_valid_report_is_accepted PASSED            [ 39%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad0] PASSED  [ 40%]
+tests/test_hardening.py::test_malformed_report_is_rejected[str] PASSED   [ 41%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad2] PASSED  [ 41%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad3] PASSED  [ 42%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad4] PASSED  [ 43%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad5] PASSED  [ 44%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad6] PASSED  [ 45%]
+tests/test_hardening.py::test_malformed_report_is_rejected[bad7] PASSED  [ 46%]
+tests/test_hardening.py::test_garbage_oversized_and_missing_reports_are_rejected PASSED [ 47%]
+tests/test_hardening.py::test_symlinked_report_is_rejected SKIPPED (...) [ 48%]
+tests/test_hardening.py::test_tampered_cached_run_is_recomputed_not_trusted PASSED [ 49%]
+tests/test_hardening.py::test_cached_result_still_reports_where_its_report_lives PASSED [ 50%]
+tests/test_hardening.py::test_shallow_clone_gives_actionable_error FAILED [ 50%]
+tests/test_hardening.py::test_no_changes_passes_cleanly PASSED           [ 51%]
+tests/test_hardening.py::test_filenames_with_spaces_and_unicode_are_handled PASSED [ 52%]
+tests/test_hardening.py::test_c_style_quoted_paths_are_decoded PASSED    [ 53%]
+tests/test_hardening.py::test_huge_and_pathological_sources_do_not_crash_analysis PASSED [ 54%]
+tests/test_hardening.py::test_oversized_changed_file_is_unknown_not_pass_or_syntax_error PASSED [ 55%]
+tests/test_hardening.py::test_module_ban_flags_new_imports_only PASSED   [ 56%]
+tests/test_hardening.py::test_module_ban_ignores_lookalikes_and_other_packages PASSED [ 57%]
+Timeout (0:00:45)!
+Thread 0x00002d6c (most recent call first):
+  File "C:\Users\pjpra\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1506 in _wait
+  File "C:\Users\pjpra\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1209 in wait
+  File "C:\Users\pjpra\Desktop\reposhield\reposhield\sandbox.py", line 91 in _exec
+  File "C:\Users\pjpra\Desktop\reposhield\reposhield\sandbox.py", line 161 in run
+  File "C:\Users\pjpra\Desktop\reposhield\reposhield\doctor.py", line 121 in run_doctor
+  File "C:\Users\pjpra\Desktop\reposhield\reposhield\cli.py", line 187 in cmd_doctor
+  File "C:\Users\pjpra\Desktop\reposhield\reposhield\cli.py", line 309 in main
+  File "C:\Users\pjpra\Desktop\reposhield\tests\test_hardening.py", line 166 in test_doctor_runs_and_proves_isolation_properties
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\python.py", line 159 in pytest_pyfunc_call
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_callers.py", line 121 in _multicall
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_manager.py", line 120 in _hookexec
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_hooks.py", line 512 in __call__
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\python.py", line 1627 in runtest
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 174 in pytest_runtest_call
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_callers.py", line 121 in _multicall
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_manager.py", line 120 in _hookexec
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_hooks.py", line 512 in __call__
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 242 in <lambda>
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 341 in from_call
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 241 in call_and_report
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 132 in runtestprotocol
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\runner.py", line 113 in pytest_runtest_protocol
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_callers.py", line 121 in _multicall
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_manager.py", line 120 in _hookexec
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_hooks.py", line 512 in __call__
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\main.py", line 362 in pytest_runtestloop
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_callers.py", line 121 in _multicall
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_manager.py", line 120 in _hookexec
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_hooks.py", line 512 in __call__
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\main.py", line 337 in _main
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\main.py", line 283 in wrap_session
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\main.py", line 330 in pytest_cmdline_main
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_callers.py", line 121 in _multicall
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_manager.py", line 120 in _hookexec
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pluggy\_hooks.py", line 512 in __call__
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\config\__init__.py", line 175 in main
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\_pytest\config\__init__.py", line 201 in console_main
+  File "C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\pytest\__main__.py", line 9 in <module>
+  File "C:\Users\pjpra\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86 in _run_code
+  File "C:\Users\pjpra\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196 in _run_module_as_main

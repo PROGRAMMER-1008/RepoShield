@@ -1,0 +1,27 @@
+{
+  "date_local": "2026-10-17",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "prefix": "C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-release\\clean-env",
+  "installed_package": "C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-release\\clean-env\\lib\\site-packages\\reposhield\\__init__.py",
+  "installed_versions_match_all_37_wheels": true,
+  "installation": "fresh venv, --no-index --require-hashes, no system-site-packages",
+  "pip_check": "No broken requirements found",
+  "tests": {
+    "passed": 39,
+    "seconds": 52.06,
+    "suite_files": [
+      "test_e2e.py",
+      "test_policy_selector.py",
+      "test_analyzer_graph.py",
+      "test_portability.py"
+    ],
+    "source": "unchanged copied tests outside source package"
+  },
+  "recovery_rounds": 2,
+  "recovery_report": "rehearsal-clean-env/rehearsal.json",
+  "limitations": [
+    "same Windows host, not fresh-machine acceptance",
+    "Python/Git/Docker/PostgreSQL image prerequisites not bundled",
+    "dedicated Linux and remaining GitHub acceptance pending"
+  ]
+}

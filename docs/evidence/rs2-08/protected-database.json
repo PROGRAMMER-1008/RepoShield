@@ -1,0 +1,189 @@
+{
+  "mode": "DEVELOPMENT EXECUTION",
+  "vm_acceptance": "pending",
+  "before": {
+    "version": 1,
+    "tables": {
+      "products": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "ddda482bed664dd6e72fae42f305d8cc3a703c6b04a4a816c3da18b58a107e52"
+      },
+      "customers": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "52b0d9a0734f4784fd3bbfb2fa8d7feb35e8957c3aa1a03a7302551aef35908e"
+      },
+      "orders": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "1fc4b5737470c950946692a4afb51070d5b6c705bafc92b1fec3f7d5ff4557ae"
+      }
+    },
+    "sha256": "618e54717327dc0d8d9e7c964f896ccb7cfdfbf31bc774593ebdd0315718033e"
+  },
+  "after": {
+    "version": 1,
+    "tables": {
+      "products": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "ddda482bed664dd6e72fae42f305d8cc3a703c6b04a4a816c3da18b58a107e52"
+      },
+      "customers": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "52b0d9a0734f4784fd3bbfb2fa8d7feb35e8957c3aa1a03a7302551aef35908e"
+      },
+      "orders": {
+        "exists": true,
+        "rows": 2,
+        "sha256": "1fc4b5737470c950946692a4afb51070d5b6c705bafc92b1fec3f7d5ff4557ae"
+      }
+    },
+    "sha256": "618e54717327dc0d8d9e7c964f896ccb7cfdfbf31bc774593ebdd0315718033e"
+  },
+  "policy_denial": {
+    "decision": "DENY",
+    "reason": "unsupported_action",
+    "token_issued": false
+  },
+  "credential_control": "live database rejected incorrect password",
+  "network_control": "same protected DB IP:5432 reachable from trusted bridge control; denied in network-none sandbox",
+  "verifier_permissions": "SELECT allowed; DELETE rejected",
+  "allowed_patch": {
+    "execution_id": "1ef109bed2a541b49dda546935f5341c",
+    "state": "completed",
+    "outcome": {
+      "source_revision": "sha256:da79feb50664c85631b20a33253d14409f13a98ace3d613214b9e11fa006cf20",
+      "new_revision": "sha256:7114d2389d8f164a3fee6169545e5fbed65f5cae60577cc67d184c74f75f4f85",
+      "mode": "DEVELOPMENT EXECUTION"
+    }
+  },
+  "sandbox_tests": {
+    "execution_id": "d4adf31c59bd48e896c339001032ce6f",
+    "state": "completed",
+    "outcome": {
+      "mandatory_evidence_satisfied": true,
+      "observed_cases": 4,
+      "exit_code": 0,
+      "stdout": "....                                                                     [100%]\n4 passed in 0.08s\n",
+      "junit": "<?xml version=\"1.0\" encoding=\"utf-8\"?><testsuites name=\"pytest tests\"><testsuite name=\"pytest\" errors=\"0\" failures=\"0\" skipped=\"0\" tests=\"4\" time=\"0.078\" timestamp=\"2026-10-11T19:03:34.600564+00:00\" hostname=\"cba804d59be4\"><testcase classname=\"tests.test_app\" name=\"test_allowed_edit\" file=\"tests/test_app.py\" line=\"4\" time=\"0.000\" /><testcase classname=\"tests.test_app\" name=\"test_direct_database_network_bypass[172.17.0.3-5432]\" file=\"tests/test_app.py\" line=\"7\" time=\"0.002\" /><testcase classname=\"tests.test_app\" name=\"test_direct_database_network_bypass[127.0.0.1-58283]\" file=\"tests/test_app.py\" line=\"7\" time=\"0.001\" /><testcase classname=\"tests.test_app\" name=\"test_no_privileged_environment_or_mounts\" file=\"tests/test_app.py\" line=\"13\" time=\"0.000\" /></testsuite></testsuites>",
+      "container_id": "cba804d59be497837b70bfd6c68d13476f5df0c3d5a4c0290a03724513065d9b",
+      "image_id": "sha256:d7fa14e9b41f25dbd10b7872c5dc8d85e3741c7e6a00d5b6b05a7e8f7502a66e",
+      "isolation": {
+        "Binds": null,
+        "ContainerIDFile": "",
+        "LogConfig": {
+          "Type": "none",
+          "Config": {}
+        },
+        "NetworkMode": "none",
+        "PortBindings": {},
+        "RestartPolicy": {
+          "Name": "no",
+          "MaximumRetryCount": 0
+        },
+        "AutoRemove": false,
+        "VolumeDriver": "",
+        "VolumesFrom": null,
+        "ConsoleSize": [
+          0,
+          0
+        ],
+        "CapAdd": null,
+        "CapDrop": [
+          "ALL"
+        ],
+        "CgroupnsMode": "private",
+        "Dns": null,
+        "DnsOptions": [],
+        "DnsSearch": [],
+        "ExtraHosts": null,
+        "GroupAdd": null,
+        "IpcMode": "private",
+        "Cgroup": "",
+        "Links": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "Privileged": false,
+        "PublishAllPorts": false,
+        "ReadonlyRootfs": true,
+        "SecurityOpt": [
+          "no-new-privileges"
+        ],
+        "Tmpfs": {
+          "/work": "rw,noexec,nosuid,nodev,size=8m,uid=1000,gid=1000,mode=700"
+        },
+        "UTSMode": "",
+        "UsernsMode": "",
+        "ShmSize": 65536,
+        "Runtime": "runc",
+        "Isolation": "",
+        "CpuShares": 0,
+        "Memory": 134217728,
+        "NanoCpus": 500000000,
+        "CgroupParent": "",
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": [],
+        "BlkioDeviceReadBps": [],
+        "BlkioDeviceWriteBps": [],
+        "BlkioDeviceReadIOps": [],
+        "BlkioDeviceWriteIOps": [],
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "Devices": [],
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "MemoryReservation": 0,
+        "MemorySwap": 134217728,
+        "MemorySwappiness": null,
+        "OomKillDisable": false,
+        "PidsLimit": 32,
+        "Ulimits": [
+          {
+            "Name": "core",
+            "Hard": 0,
+            "Soft": 0
+          },
+          {
+            "Name": "nofile",
+            "Hard": 128,
+            "Soft": 128
+          }
+        ],
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "IOMaximumIOps": 0,
+        "IOMaximumBandwidth": 0,
+        "MaskedPaths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "ReadonlyPaths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ]
+      },
+      "mode": "DEVELOPMENT EXECUTION"
+    }
+  },
+  "database_unchanged": true
+}

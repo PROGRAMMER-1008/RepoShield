@@ -1,0 +1,13 @@
+{
+  "scope": "operator-re-signed historical payload, first local intake; real GitHub API and Git",
+  "live_inflight_race_validated": false,
+  "remote_mutations": false,
+  "pr": 1,
+  "historical_head": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+  "current_head": "b9d2be4edc01f778855b5f8baa17a2f5d7abe6c1",
+  "historical_delivery_id": 3848592612787224576,
+  "first_arrival_used_current_head": true,
+  "historical_publication_obsolete_without_remote_check": true,
+  "passed": true,
+  "disposable_schema_removed": true
+}

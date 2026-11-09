@@ -1,0 +1,6 @@
+reposhield/broker.py
+reposhield/snapshots.py
+reposhield/restricted_runner.py
+reposhield/runner_watchdog.py
+reposhield/server/execution_service.py
+All checked module bytes match final source. Broker entry point present.

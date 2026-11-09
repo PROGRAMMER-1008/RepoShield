@@ -1,0 +1,38 @@
+{
+  "date_local": "2026-10-16",
+  "operator_report": "Saved classic branch protection as requested",
+  "main_protected": true,
+  "branch_protection_summary": {
+    "enabled": true,
+    "required_status_checks": {
+      "enforcement_level": "everyone",
+      "contexts": [
+        "RepoShield / verification"
+      ],
+      "checks": [
+        {
+          "context": "RepoShield / verification",
+          "app_id": 5339672
+        }
+      ]
+    }
+  },
+  "protection_api_status": 403,
+  "pr": {
+    "number": 1,
+    "state": "open",
+    "head": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+    "mergeable": true,
+    "mergeable_state": "clean"
+  },
+  "checks": [
+    {
+      "id": 116893314396,
+      "name": "RepoShield / verification",
+      "head_sha": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "merge_rejection_validated": false
+}

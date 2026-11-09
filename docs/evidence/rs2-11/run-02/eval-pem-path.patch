@@ -1,0 +1,7 @@
+diff --git a/example.pem b/example.pem
+new file mode 100644
+index 0000000..9edb79b
+--- /dev/null
++++ b/example.pem
+@@ -0,0 +1 @@
++Not a private key

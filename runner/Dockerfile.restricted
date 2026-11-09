@@ -1,0 +1,10 @@
+ARG BASE
+FROM ${BASE}
+# Offline build: administrator-prepared base, never candidate dependency scripts.
+RUN python -c "import pytest; assert pytest.__version__ == '9.1.1'"
+COPY entry.py /opt/reposhield/entry.py
+COPY pytest.ini /opt/reposhield/pytest.ini
+COPY pytest_entry.py /opt/reposhield/pytest_entry.py
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 TMPDIR=/work/tmp HOME=/work
+USER 1000:1000
+ENTRYPOINT ["python", "-I", "/opt/reposhield/entry.py"]

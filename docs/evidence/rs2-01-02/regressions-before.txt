@@ -1,0 +1,140 @@
+..FFFFFFFFFF                                                             [100%]
+================================== FAILURES ===================================
+_ test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report2-True] __
+
+report = {'tests': {}}, ran = True
+
+    @pytest.mark.parametrize("report,ran", [(None, True), (None, False), ({"tests": {}}, True),
+        ({"tests": {"test_a.py::test_a": {"outcome": "skipped"}}}, True)])
+    def test_missing_mandatory_evidence_cannot_be_downgraded_to_info(report, ran):
+>       assert aggregate(required_result(report, ran, "info"))[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:58: AssertionError
+_ test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report3-True] __
+
+report = {'tests': {'test_a.py::test_a': {'outcome': 'skipped'}}}, ran = True
+
+    @pytest.mark.parametrize("report,ran", [(None, True), (None, False), ({"tests": {}}, True),
+        ({"tests": {"test_a.py::test_a": {"outcome": "skipped"}}}, True)])
+    def test_missing_mandatory_evidence_cannot_be_downgraded_to_info(report, ran):
+>       assert aggregate(required_result(report, ran, "info"))[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:58: AssertionError
+_____________________ test_pending_evidence_never_passes ______________________
+
+    def test_pending_evidence_never_passes():
+>       assert aggregate([Finding("policy", "r", "required_test", "PENDING")])[0] == "REVIEW_REQUIRED"
+E       AssertionError: assert 'PASS' == 'REVIEW_REQUIRED'
+E         
+E         - REVIEW_REQUIRED
+E         + PASS
+
+tests\test_rs2_integrity.py:62: AssertionError
+___________ test_abnormal_exit_cannot_pass_with_positive_report[1] ____________
+
+exit_code = 1
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+___________ test_abnormal_exit_cannot_pass_with_positive_report[2] ____________
+
+exit_code = 2
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+___________ test_abnormal_exit_cannot_pass_with_positive_report[3] ____________
+
+exit_code = 3
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+___________ test_abnormal_exit_cannot_pass_with_positive_report[4] ____________
+
+exit_code = 4
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+___________ test_abnormal_exit_cannot_pass_with_positive_report[5] ____________
+
+exit_code = 5
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+__________ test_abnormal_exit_cannot_pass_with_positive_report[None] __________
+
+exit_code = None
+
+    @pytest.mark.parametrize("exit_code", [1, 2, 3, 4, 5, None])
+    def test_abnormal_exit_cannot_pass_with_positive_report(exit_code):
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": exit_code}
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        findings, _ = _test_findings(SandboxResult(exit_code, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:70: AssertionError
+______________ test_selected_file_omitted_by_pytest_cannot_pass _______________
+
+    def test_selected_file_omitted_by_pytest_cannot_pass():
+        report = {"tests": {"test_a.py::test_a": {"outcome": "passed"}}, "collect_errors": [], "exitstatus": 0}
+        plan = TestPlan("IMPACTED", "safe", [SelectedTest("test_a.py", "HIGH"), SelectedTest("test_b.py", "HIGH")], 2, [], [])
+        findings, _ = _test_findings(SandboxResult(0, "", "", 1), report, plan, Limits())
+>       assert aggregate(findings)[0] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests\test_rs2_integrity.py:77: AssertionError
+============================== warnings summary ===============================
+reposhield\selector.py:23
+  C:\Users\pjpra\Desktop\reposhield\reposhield\selector.py:23: PytestCollectionWarning: cannot collect test class 'TestPlan' because it has a __init__ constructor (from: tests/test_rs2_integrity.py)
+    @dataclass
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report2-True]
+FAILED tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report3-True]
+FAILED tests/test_rs2_integrity.py::test_pending_evidence_never_passes - Asse...
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[1]
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[2]
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[3]
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[4]
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[5]
+FAILED tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[None]
+FAILED tests/test_rs2_integrity.py::test_selected_file_omitted_by_pytest_cannot_pass
+10 failed, 2 passed, 21 deselected, 1 warning in 0.86s

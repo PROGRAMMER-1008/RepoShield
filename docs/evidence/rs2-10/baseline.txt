@@ -1,0 +1,15 @@
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+...................s.................................................... [ 77%]
+........................................................................ [ 96%]
+.............                                                            [100%]
+============================== warnings summary ===============================
+.venv-rs2\lib\site-packages\starlette\testclient.py:40
+  C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\starlette\testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_hardening.py:64: symlinks not permitted on this platform
+372 passed, 1 skipped, 1 warning in 269.12s (0:04:29)

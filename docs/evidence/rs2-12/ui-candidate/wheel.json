@@ -1,0 +1,9 @@
+{
+  "file": "reposhield-0.2.1-py3-none-any.whl",
+  "sha256": "165c7d2e60b0c6ae3a5473783927e21d84f02aaaa94bbf7c1720d01a85a1154a",
+  "bytes": 150750,
+  "source_python_files_compared": 91,
+  "source_mismatches": [],
+  "bytecode_excluded": true,
+  "includes_ui_theme": true
+}

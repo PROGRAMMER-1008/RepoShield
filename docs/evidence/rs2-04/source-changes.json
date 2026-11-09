@@ -1,0 +1,17 @@
+{
+  "modified": [
+    "reposhield/contracts.py",
+    "reposhield/server/admin.py",
+    "reposhield/server/config.py",
+    "reposhield/server/coordinator.py",
+    "reposhield/server/durable.py"
+  ],
+  "removed": [],
+  "added": [
+    "reposhield/action_policy.py",
+    "reposhield/server/action_service.py",
+    "reposhield/server/schema_v2.py",
+    "reposhield/server/migrations/versions/0002_action_policy.py",
+    "tests/test_action_policy.py"
+  ]
+}

@@ -1,0 +1,10 @@
+diff --git a/auth/login.py b/auth/login.py
+index 7692e11..719af4a 100644
+--- a/auth/login.py
++++ b/auth/login.py
+@@ -8,3 +8,5 @@ def hash_password(password: str, salt: str) -> str:
+ 
+ def check_password(password: str, salt: str, expected: str) -> bool:
+     return hmac.compare_digest(hash_password(password, salt), expected)
++
++def broken(:

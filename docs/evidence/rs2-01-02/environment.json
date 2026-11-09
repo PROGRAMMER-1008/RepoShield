@@ -1,0 +1,8 @@
+{
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "C:\\Users\\pjpra\\Desktop\\reposhield\\.venv-rs2\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "git": "git version 2.52.0.windows.1",
+  "plugin_autoload": "disabled for parent pytest; sandbox uses scrubbed environment",
+  "dependencies": "dependencies.txt"
+}

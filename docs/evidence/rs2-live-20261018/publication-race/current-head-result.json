@@ -1,0 +1,18 @@
+{
+  "delivery_state": "processed",
+  "error": null,
+  "check": {
+    "attempt_id": "3d24099339c14c20a38c342206d4a0d0",
+    "head_sha": "0f9f6a80cb8934a73c9b9fdf27d390b84d3e5b22",
+    "state": "published",
+    "check_id": 117739405466,
+    "checkpoint_id": "0c0be1a2c95a4902ae2c74f8cc32b3c5",
+    "error": null
+  },
+  "authenticated": true,
+  "conclusion": "success",
+  "title": "PASS: authenticated static verification; no tests required",
+  "head": "0f9f6a80cb8934a73c9b9fdf27d390b84d3e5b22",
+  "check_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/117739405466",
+  "mergeable_state": "clean"
+}

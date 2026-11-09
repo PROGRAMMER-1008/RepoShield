@@ -1,0 +1,11 @@
+.rs2-03-dist\reposhield-0.2.1-py3-none-any.whl
+reposhield/server/migrations/env.py
+reposhield/server/migrations/versions/0001_foundation.py
+reposhield/server/schema_v1.py
+reposhield/server/admin.py
+reposhield/server/process_worker.py
+[console_scripts]
+reposhield = reposhield.cli:main
+reposhield-db = reposhield.server.admin:main
+reposhield-worker = reposhield.server.process_worker:main
+

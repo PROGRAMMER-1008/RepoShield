@@ -1,0 +1,98 @@
+{
+  "date_local": "2026-10-16",
+  "pr_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/1",
+  "head_sha": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+  "base_sha": "07f22c74f0b9e42c715adef1573b767339e99e02",
+  "changed_files": 1,
+  "checks": [
+    {
+      "id": 116893314396,
+      "name": "RepoShield / verification",
+      "head_sha": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/116893314396",
+      "output": {
+        "title": "PASS: authenticated static verification; no tests required",
+        "summary": "Head-only verification for 45be28ba87af7b0e186915b0d87da6f38605cd20. Evidence checkpoint bd5a7568b2e140aeabeff317ba91a4e7. Dynamic execution integration and dedicated-host acceptance remain pending.",
+        "text": null,
+        "annotations_count": 0,
+        "annotations_url": "https://api.github.com/repos/Repoguard-demo-org/Repoguard-demo/check-runs/116893314396/annotations"
+      }
+    }
+  ],
+  "stored_checks": [
+    {
+      "attempt_id": "aa789bc261844595a280d6cf9e8ac503",
+      "pr_number": 1,
+      "head_sha": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+      "check_id": 116893314396,
+      "checkpoint_id": "bd5a7568b2e140aeabeff317ba91a4e7",
+      "state": "published",
+      "tries": 0,
+      "error": null
+    }
+  ],
+  "stored_deliveries": [
+    {
+      "id": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+      "state": "processed",
+      "attempt_id": "aa789bc261844595a280d6cf9e8ac503"
+    }
+  ],
+  "evidence_authenticated": true,
+  "live_deliveries": [
+    {
+      "id": 3848593148636823552,
+      "guid": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+      "event": "pull_request",
+      "action": "opened",
+      "status_code": 202,
+      "status": "OK",
+      "redelivery": true
+    },
+    {
+      "id": 3848593032544788480,
+      "guid": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+      "event": "pull_request",
+      "action": "opened",
+      "status_code": 202,
+      "status": "OK",
+      "redelivery": true
+    },
+    {
+      "id": 3848592612787224576,
+      "guid": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+      "event": "pull_request",
+      "action": "opened",
+      "status_code": 502,
+      "status": "failed to connect to host",
+      "redelivery": false
+    },
+    {
+      "id": 3848550666479869952,
+      "guid": "111398c0-c911-11f1-8884-c56cc7fb627c",
+      "event": "check_suite",
+      "action": "requested",
+      "status_code": 202,
+      "status": "OK",
+      "redelivery": false
+    },
+    {
+      "id": 3848550330910375936,
+      "guid": "b3da3d80-c910-11f1-8799-173e2f13b847",
+      "event": "installation",
+      "action": "new_permissions_accepted",
+      "status_code": 202,
+      "status": "OK",
+      "redelivery": false
+    }
+  ],
+  "main_protected": false,
+  "temporary_webhook_url": "https://hart-reaches-personality-exec.trycloudflare.com/api/v1/github/webhook",
+  "limitations": [
+    "README-only static verification; no tests required",
+    "Negative verdicts, reordered commits, revocation and actual merge enforcement pending",
+    "Dedicated Linux VM acceptance pending"
+  ]
+}

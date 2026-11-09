@@ -1,0 +1,35 @@
+{
+  "scope": "two-mode automated technical rehearsal on Docker Desktop; not a full narrated demo",
+  "dedicated_linux_acceptance": "pending",
+  "cases": [
+    "tests/test_e2e.py::test_scenario_verdicts",
+    "tests/test_product_ui.py::test_required_tests_stay_review_required_in_real_worker_ui",
+    "tests/test_authorization.py::test_real_signature_idempotent_issue_and_one_shot_claim",
+    "tests/test_protected_database.py::test_real_protected_shop_workflow_and_bypass"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "seconds": 29.41,
+      "exit_code": 0,
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "protected_database_unchanged": true,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "seconds": 30.39,
+      "exit_code": 0,
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "protected_database_unchanged": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

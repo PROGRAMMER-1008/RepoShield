@@ -1,0 +1,20 @@
+RS2 07 development validation, 12 October 2026
+
+Focused final run: 11 passed, 1 warning in 15.25s.
+Full run: 318 passed, 1 skipped, 1 warning in 232.60s.
+Full command output: full-suite.txt.
+Actual protected-database report: protected-database.json.
+
+.venv-rs2/Scripts/python -m pip check
+Exit 0: No broken requirements found.
+
+.venv-rs2/Scripts/python -m compileall -q reposhield tests
+Exit 0.
+
+Cleanup: reposhield-rs207-db stopped; --rm removes the disposable container.
+docker ps -a --filter label=reposhield.restricted=true --format '{{.Names}}'
+No output.
+docker ps -a --filter name=reposhield-protected- --format '{{.Names}}'
+No output.
+
+Dedicated Linux VM acceptance remains pending. No paid services or LLM used.

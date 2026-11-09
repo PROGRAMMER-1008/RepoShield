@@ -1,0 +1,7 @@
+diff --git a/requirements.txt b/requirements.txt
+index cc52e8c..00e71a6 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1 +1,2 @@
+ pytest>=8
++requests==2.32.3

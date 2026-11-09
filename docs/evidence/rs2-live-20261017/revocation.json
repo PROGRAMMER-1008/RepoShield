@@ -1,0 +1,12 @@
+{
+  "schema": "rs_live_fault_0522abdd3db24093986429bc63587c43",
+  "attempt_id": "347be5d770144de9a810241ff14db97a",
+  "real_installation_suspension": true,
+  "fresh_installation_access_denied": true,
+  "binding_disabled": true,
+  "claim_denied": true,
+  "remote_check_created": false,
+  "publication_state": "failed",
+  "publication_error": "installation_inactive",
+  "access_restored_and_explicitly_onboarded": true
+}

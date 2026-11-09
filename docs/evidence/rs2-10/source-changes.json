@@ -1,0 +1,13 @@
+{
+  "changed_python": [
+    "reposhield/cli.py",
+    "reposhield/server/config.py",
+    "reposhield/server/coordinator.py"
+  ],
+  "added_python": [
+    "reposhield/server/browser_auth.py",
+    "reposhield/server/product_ui.py",
+    "tests/test_product_ui.py"
+  ],
+  "missing_python": []
+}

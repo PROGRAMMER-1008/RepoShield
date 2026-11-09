@@ -1,0 +1,17 @@
+{
+  "compared_with": ".rs2-09-original.zip",
+  "changed_or_added_source_files": [
+    "reposhield/server/admin.py",
+    "reposhield/server/config.py",
+    "reposhield/server/coordinator.py",
+    "reposhield/server/durable.py",
+    "reposhield/server/github_app.py",
+    "reposhield/server/github_service.py",
+    "reposhield/server/github_worker.py",
+    "reposhield/server/schema_v5.py",
+    "reposhield/server/migrations/versions/0005_github.py",
+    "tests/test_github_app.py",
+    "pyproject.toml"
+  ],
+  "source_control": "no root git repository"
+}

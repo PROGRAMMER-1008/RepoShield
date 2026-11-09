@@ -1,0 +1,1704 @@
+[
+  {
+    "branch": "pr/safe-refactor",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 2.412795099982759,
+    "tests": {
+      "status": "RAN",
+      "executed": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 719,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 1
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "05260e4edf0743fa47c757eed7811b4080e5f57f80d3c245bd7ae6967cf11a42"
+  },
+  {
+    "branch": "pr/analytics-leak",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.333648900006665,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 1
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 46,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "ad083d193d3891ce3b0ca60fb7f1c2e60d5ec79e64712faa774b125b27665fcf"
+  },
+  {
+    "branch": "pr/transitive-leak",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.4133776999951806,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 5,
+      "total": 9,
+      "reduction_pct": 44.4,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "common/money.py",
+              "kind": "static-dependency",
+              "path": [
+                "common/money.py",
+                "payments/refund.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 3
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "common/money.py",
+              "kind": "static-dependency",
+              "path": [
+                "common/money.py",
+                "tests/common/test_money.py"
+              ],
+              "distance": 1
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "common/money.py",
+              "kind": "static-dependency",
+              "path": [
+                "common/money.py",
+                "payments/service.py",
+                "tests/orders/test_orders.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "common/money.py",
+              "kind": "static-dependency",
+              "path": [
+                "common/money.py",
+                "payments/service.py",
+                "tests/payments/test_payment_service.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "common/money.py",
+              "kind": "static-dependency",
+              "path": [
+                "common/money.py",
+                "payments/refund.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 2
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 46,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "6b391e7b63c38da429cfe173a70c3858cd240dbd3f61cb0d9d869b400b793d18"
+  },
+  {
+    "branch": "pr/secret-and-workflow",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.4349586000025738,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 4,
+      "total": 9,
+      "reduction_pct": 55.6,
+      "fallback_reasons": [],
+      "ignored": [
+        ".github/workflows/deploy.yml"
+      ],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/service.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/service.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/service.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/service.py",
+                "tests/orders/test_orders.py"
+              ],
+              "distance": 1
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/service.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/service.py",
+                "tests/payments/test_payment_service.py"
+              ],
+              "distance": 1
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/service.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/service.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 1
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "1d8cea6293ec886a90abdb993d346bfe764a50dbe9be241d08bca14b01526e5e"
+  },
+  {
+    "branch": "pr/weakened-tests",
+    "expected": "REVIEW_REQUIRED",
+    "actual": "REVIEW_REQUIRED",
+    "matched": true,
+    "elapsed_s": 2.3927660000044852,
+    "tests": {
+      "status": "RAN",
+      "executed": 4,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 1,
+      "exit_code": 0,
+      "duration_ms": 703,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 1
+            },
+            {
+              "changed": "tests/payments/test_refund.py",
+              "kind": "test-changed"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 2,
+      "reparsed": 2,
+      "reused": 23,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "8fbf5ca78b1aadc82548a602cd8349d1c954a6816a58bd5099726e24a48ebbd7"
+  },
+  {
+    "branch": "pr/real-bug",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 3.1114433000038844,
+    "tests": {
+      "status": "RAN",
+      "executed": 6,
+      "passed": 5,
+      "failed": 1,
+      "skipped": 0,
+      "exit_code": 1,
+      "duration_ms": 1547,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 3,
+      "total": 9,
+      "reduction_pct": 66.7,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "auth/tokens.py",
+              "kind": "static-dependency",
+              "path": [
+                "auth/tokens.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 1
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "auth/tokens.py",
+              "kind": "static-dependency",
+              "path": [
+                "auth/tokens.py",
+                "tests/auth/test_tokens.py"
+              ],
+              "distance": 1
+            },
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "19b0b9cb77904e97a617ba5953e45d31a2e135ec167fec205cb5992d48039fc8"
+  },
+  {
+    "branch": "pr/policy-tamper",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.356204500014428,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [
+        ".reposhield.yml"
+      ],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 2
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "payments/refund.py",
+              "kind": "static-dependency",
+              "path": [
+                "payments/refund.py",
+                "tests/payments/test_refund.py"
+              ],
+              "distance": 1
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 46,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "e58641123f838195aecdeef03df2148b74ee3dfa3b9bd531a86e393095b4dac8"
+  },
+  {
+    "branch": "pr/docs-only",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 1.391965100017842,
+    "tests": {
+      "status": "NOT_NEEDED",
+      "reason": "no changed file can affect any test"
+    },
+    "plan": {
+      "mode": "NONE",
+      "strategy": "safe",
+      "selected": 0,
+      "total": 9,
+      "reduction_pct": 100.0,
+      "fallback_reasons": [],
+      "ignored": [
+        "README.md"
+      ],
+      "tests": []
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "14539fd26472c157b6dc8b9063bf5d3de9e8559c7a40c4a0fb63a49b25e90ef4"
+  },
+  {
+    "branch": "pr/new-dependency",
+    "expected": "REVIEW_REQUIRED",
+    "actual": "REVIEW_REQUIRED",
+    "matched": true,
+    "elapsed_s": 2.2254634000128135,
+    "tests": {
+      "status": "RAN",
+      "executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 718,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        "requirements.txt: test/dependency configuration changed"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "e0867b40691bf8674292c9ca479cf7e289cb276a925a4a7d7e79492e5ca2a7dd"
+  },
+  {
+    "branch": "pr/prod-config",
+    "expected": "REVIEW_REQUIRED",
+    "actual": "REVIEW_REQUIRED",
+    "matched": true,
+    "elapsed_s": 2.2555674000177532,
+    "tests": {
+      "status": "RAN",
+      "executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 703,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        "config/production/settings.yaml: unmapped file type (cannot prove it does not affect tests)"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "ef15da9bc16b954b1d42f4ed3f2a926f310bfc3a8afc572cf1b0fd124e0f08dd"
+  },
+  {
+    "branch": "eval/guide",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 1.264798799995333,
+    "tests": {
+      "status": "NOT_NEEDED",
+      "reason": "no changed file can affect any test"
+    },
+    "plan": {
+      "mode": "NONE",
+      "strategy": "safe",
+      "selected": 0,
+      "total": 9,
+      "reduction_pct": 100.0,
+      "fallback_reasons": [],
+      "ignored": [
+        "docs/guide.md"
+      ],
+      "tests": []
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "6b0ede87f89811c0fd9155f1f23dfe55fecddd90ce3e0924dee020ea5c8edaf9"
+  },
+  {
+    "branch": "eval/license",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 1.4773129999812227,
+    "tests": {
+      "status": "NOT_NEEDED",
+      "reason": "no changed file can affect any test"
+    },
+    "plan": {
+      "mode": "NONE",
+      "strategy": "safe",
+      "selected": 0,
+      "total": 9,
+      "reduction_pct": 100.0,
+      "fallback_reasons": [],
+      "ignored": [
+        "LICENSE"
+      ],
+      "tests": []
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "2ededc5d65769531772dcebfb7ee3a084bf24b09ca8381cf525c86749defc6a0"
+  },
+  {
+    "branch": "eval/workflow-text",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.3240980000118725,
+    "tests": {
+      "status": "NOT_NEEDED",
+      "reason": "no changed file can affect any test"
+    },
+    "plan": {
+      "mode": "NONE",
+      "strategy": "safe",
+      "selected": 0,
+      "total": 9,
+      "reduction_pct": 100.0,
+      "fallback_reasons": [],
+      "ignored": [
+        ".github/workflows/denied.txt"
+      ],
+      "tests": []
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "fe04208861420e4522183858d2fd4df4994e10ae4bbf1f644aa9f47a10ab4a17"
+  },
+  {
+    "branch": "eval/env-file",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.2878230000205804,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        ".env: unmapped file type (cannot prove it does not affect tests)"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "7a16efbd9164cb0b961d7af27f1947ac1a2f4c4a9bce0922df921307eb4fec5d"
+  },
+  {
+    "branch": "eval/pem-path",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.3697436999937054,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        "example.pem: unmapped file type (cannot prove it does not affect tests)"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "f20f78936bbee5f5e563e7103af2a174894fd40667686feaf5285ff5a4fab936"
+  },
+  {
+    "branch": "eval/invalid-python",
+    "expected": "BLOCK",
+    "actual": "BLOCK",
+    "matched": true,
+    "elapsed_s": 1.4429775000025984,
+    "tests": {
+      "status": "NOT_RUN",
+      "reason": "skipped: a blocking finding already exists (use --always-run-tests to run anyway)"
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "auth/login.py",
+              "kind": "static-dependency",
+              "path": [
+                "auth/login.py",
+                "tests/auth/test_login.py"
+              ],
+              "distance": 1
+            },
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "a64b0633829052ba9cb3efe8782ea234ff095c97ba99e7be3ffac7bc7f150943"
+  },
+  {
+    "branch": "eval/auth-comment",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 2.3991350999858696,
+    "tests": {
+      "status": "RAN",
+      "executed": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 750,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 2,
+      "total": 9,
+      "reduction_pct": 77.8,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "auth/login.py",
+              "kind": "static-dependency",
+              "path": [
+                "auth/login.py",
+                "tests/auth/test_login.py"
+              ],
+              "distance": 1
+            },
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "cc548599e0b6f374c3d0e26a6cf463a2f278176e84c0dca49e8e848f80b18ca9"
+  },
+  {
+    "branch": "eval/api-comment",
+    "expected": "PASS",
+    "actual": "PASS",
+    "matched": true,
+    "elapsed_s": 2.3039080999733415,
+    "tests": {
+      "status": "RAN",
+      "executed": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 655,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "IMPACTED",
+      "strategy": "safe",
+      "selected": 1,
+      "total": 9,
+      "reduction_pct": 88.9,
+      "fallback_reasons": [],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "HIGH",
+          "reasons": [
+            {
+              "changed": "api/routes.py",
+              "kind": "static-dependency",
+              "path": [
+                "api/routes.py",
+                "tests/api/test_routes.py"
+              ],
+              "distance": 1
+            },
+            {
+              "kind": "required-by-policy"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 1,
+      "reparsed": 1,
+      "reused": 24,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "58cce19996b0c8b29075329e174d94cb8cb4624a2830834384cb63ba41381e2a"
+  },
+  {
+    "branch": "eval/production-note",
+    "expected": "REVIEW_REQUIRED",
+    "actual": "REVIEW_REQUIRED",
+    "matched": true,
+    "elapsed_s": 2.30950789997587,
+    "tests": {
+      "status": "RAN",
+      "executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 750,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        "config/production/note.txt: unmapped file type (cannot prove it does not affect tests)"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "5f4f02f16b1bf5a5564291a9dfb5d255bf7425a7694cf425f230ecad00f776ca"
+  },
+  {
+    "branch": "eval/requirements-note",
+    "expected": "REVIEW_REQUIRED",
+    "actual": "REVIEW_REQUIRED",
+    "matched": true,
+    "elapsed_s": 2.3866679999919143,
+    "tests": {
+      "status": "RAN",
+      "executed": 16,
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "duration_ms": 750,
+      "timed_out": false,
+      "backend": "subprocess",
+      "isolation": {
+        "backend": "subprocess",
+        "security_boundary": false,
+        "network_isolated": false,
+        "rlimits": false,
+        "env_scrubbed": true,
+        "platform": "windows",
+        "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+      },
+      "output_truncated": false
+    },
+    "plan": {
+      "mode": "FULL",
+      "strategy": "safe",
+      "selected": 9,
+      "total": 9,
+      "reduction_pct": 0.0,
+      "fallback_reasons": [
+        "requirements.txt: test/dependency configuration changed"
+      ],
+      "ignored": [],
+      "tests": [
+        {
+          "path": "tests/analytics/test_analytics.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/api/test_routes.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_login.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/auth/test_tokens.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/common/test_money.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/orders/test_orders.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_database.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_payment_service.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        },
+        {
+          "path": "tests/payments/test_refund.py",
+          "confidence": "LOW",
+          "reasons": [
+            {
+              "kind": "full-suite-fallback"
+            }
+          ]
+        }
+      ]
+    },
+    "graph": {
+      "files": 25,
+      "edges": 44,
+      "tests": 9,
+      "mode": "incremental",
+      "updated": 0,
+      "reparsed": 0,
+      "reused": 25,
+      "base_graph_cached": false
+    },
+    "patch_sha256": "3adf8866cce637e0a16b6e62a7789fe0976125e18a31bf871f9621f1520dca8d"
+  }
+]

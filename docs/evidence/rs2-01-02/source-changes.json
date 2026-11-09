@@ -1,0 +1,19 @@
+{
+  "modified_source_and_tests": [
+    "reposhield\\actions.py",
+    "reposhield\\cli.py",
+    "reposhield\\engine.py",
+    "reposhield\\models.py",
+    "reposhield\\report.py",
+    "reposhield\\plugin\\rs_pytest_plugin.py",
+    "tests\\test_e2e.py",
+    "tests\\test_hardening.py",
+    "tests\\test_portability.py",
+    "pyproject.toml"
+  ],
+  "new_source_and_tests": [
+    "reposhield\\contracts.py",
+    "tests\\test_rs2_integrity.py"
+  ],
+  "demo_source_unchanged": true
+}

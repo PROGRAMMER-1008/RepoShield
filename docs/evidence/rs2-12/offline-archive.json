@@ -1,0 +1,7 @@
+{
+  "archive": "reposhield-offline-windows-py310-20261017-v3.zip",
+  "sha256": "7c0ee25cb45317c740e78b6a494ca66543fa28bc452060ead10ef658a3f6ff7a",
+  "members": 111,
+  "manifest_verified": true,
+  "scope": "explicit allowlist and private-key-pattern checks, not a comprehensive secret audit"
+}

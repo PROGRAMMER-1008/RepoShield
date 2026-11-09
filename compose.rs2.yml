@@ -1,0 +1,21 @@
+# Trusted local services only. This is not an untrusted execution boundary.
+services:
+  postgres:
+    image: postgres:17@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3
+    environment:
+      POSTGRES_DB: reposhield
+      POSTGRES_USER: reposhield
+      POSTGRES_PASSWORD: ${REPOSHIELD_DB_PASSWORD:?Set a local database password outside the repository}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - reposhield_pg:/var/lib/postgresql/data
+    mem_limit: 512m
+    cpus: 1
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U reposhield -d reposhield"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  reposhield_pg:

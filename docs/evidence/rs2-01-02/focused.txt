@@ -1,0 +1,123 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.3.3, pluggy-1.6.0 -- C:\Users\pjpra\Desktop\reposhield\.venv-rs2\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\pjpra\Desktop\reposhield
+configfile: pyproject.toml
+collecting ... collected 33 items
+
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[def test_a():\n    assert True\n-PASS] FAILED [  3%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.mark.skip\ndef test_a(): pass\n-REVIEW_REQUIRED] PASSED [  6%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.mark.xfail\ndef test_a(): assert False\n-REVIEW_REQUIRED] PASSED [  9%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.mark.xfail\ndef test_a(): pass\n-REVIEW_REQUIRED] PASSED [ 12%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.mark.xfail(strict=True)\ndef test_a(): pass\n-BLOCK] PASSED [ 15%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[# Empty file\n-REVIEW_REQUIRED] PASSED [ 18%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\npytest.skip('module skip', allow_module_level=True)\n-REVIEW_REQUIRED] PASSED [ 21%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n-PASS] FAILED [ 24%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.fixture\ndef broken(): raise RuntimeError('setup')\ndef test_a(broken): pass\n-BLOCK] PASSED [ 27%]
+tests/test_rs2_integrity.py::test_real_pytest_required_evidence[import pytest\n@pytest.fixture\ndef broken():\n    yield\n    raise RuntimeError('teardown')\ndef test_a(broken): pass\n-BLOCK] PASSED [ 30%]
+tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[None-True] PASSED [ 33%]
+tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[None-False] PASSED [ 36%]
+tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report2-True] PASSED [ 39%]
+tests/test_rs2_integrity.py::test_missing_mandatory_evidence_cannot_be_downgraded_to_info[report3-True] PASSED [ 42%]
+tests/test_rs2_integrity.py::test_pending_evidence_never_passes PASSED   [ 45%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[1] PASSED [ 48%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[2] PASSED [ 51%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[3] PASSED [ 54%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[4] PASSED [ 57%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[5] PASSED [ 60%]
+tests/test_rs2_integrity.py::test_abnormal_exit_cannot_pass_with_positive_report[None] PASSED [ 63%]
+tests/test_rs2_integrity.py::test_selected_file_omitted_by_pytest_cannot_pass PASSED [ 66%]
+tests/test_rs2_integrity.py::test_gate_never_reuses_unsigned_artifacts[result] PASSED [ 69%]
+tests/test_rs2_integrity.py::test_gate_never_reuses_unsigned_artifacts[truncate] PASSED [ 72%]
+tests/test_rs2_integrity.py::test_gate_never_reuses_unsigned_artifacts[replace] PASSED [ 75%]
+tests/test_rs2_integrity.py::test_concurrent_equivalent_attempts_preserve_each_other PASSED [ 78%]
+tests/test_rs2_integrity.py::test_assurance_options_change_identity[require_tests] PASSED [ 81%]
+tests/test_rs2_integrity.py::test_assurance_options_change_identity[untrusted_code] PASSED [ 84%]
+tests/test_rs2_integrity.py::test_assurance_options_change_identity[allow_insecure_sandbox] PASSED [ 87%]
+tests/test_rs2_integrity.py::test_assurance_options_change_identity[trust_head_policy] PASSED [ 90%]
+tests/test_rs2_integrity.py::test_stricter_request_cannot_reuse_local_pass PASSED [ 93%]
+tests/test_rs2_integrity.py::test_action_contract_rejects_authority_injection PASSED [ 96%]
+tests/test_rs2_integrity.py::test_infrastructure_failure_cannot_have_pass_receipt PASSED [100%]
+
+================================== FAILURES ===================================
+__ test_real_pytest_required_evidence[def test_a():\n    assert True\n-PASS] __
+
+tmp_path = WindowsPath('C:/Users/pjpra/Desktop/reposhield/.test-rs2-focused/test_real_pytest_required_evid0')
+body = 'def test_a():\n    assert True\n', expected = 'PASS'
+
+    @pytest.mark.parametrize("body,expected", [
+        ("def test_a():\n    assert True\n", "PASS"),
+        ("import pytest\n@pytest.mark.skip\ndef test_a(): pass\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail\ndef test_a(): assert False\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail\ndef test_a(): pass\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail(strict=True)\ndef test_a(): pass\n", "BLOCK"),
+        ("# Empty file\n", "REVIEW_REQUIRED"),
+        ("import pytest\npytest.skip('module skip', allow_module_level=True)\n", "REVIEW_REQUIRED"),
+        ("def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n", "PASS"),
+        ("import pytest\n@pytest.fixture\ndef broken(): raise RuntimeError('setup')\ndef test_a(broken): pass\n", "BLOCK"),
+        ("import pytest\n@pytest.fixture\ndef broken():\n    yield\n    raise RuntimeError('teardown')\ndef test_a(broken): pass\n", "BLOCK"),
+    ])
+    def test_real_pytest_required_evidence(tmp_path, body, expected):
+        (tmp_path / "test_a.py").write_text(body)
+        coverage_map.install_plugin(str(tmp_path))
+        result = SubprocessSandbox().run(
+            [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", "-p", "rs_pytest_plugin"],
+            str(tmp_path), env={"RS_RESULT_PATH": ".reposhield/out/results.json"}, limits=Limits())
+        report = load_test_report(str(tmp_path / ".reposhield/out/results.json"), str(tmp_path))
+        assert report is not None
+        findings = required_result(report)
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        run_findings, _ = _test_findings(result, report, plan, Limits())
+>       assert aggregate(findings + run_findings)[0] == expected
+E       AssertionError: assert 'REVIEW_REQUIRED' == 'PASS'
+E         
+E         - PASS
+E         + REVIEW_REQUIRED
+
+tests\test_rs2_integrity.py:52: AssertionError
+_ test_real_pytest_required_evidence[def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n-PASS] _
+
+tmp_path = WindowsPath('C:/Users/pjpra/Desktop/reposhield/.test-rs2-focused/test_real_pytest_required_evid7')
+body = 'def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n'
+expected = 'PASS'
+
+    @pytest.mark.parametrize("body,expected", [
+        ("def test_a():\n    assert True\n", "PASS"),
+        ("import pytest\n@pytest.mark.skip\ndef test_a(): pass\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail\ndef test_a(): assert False\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail\ndef test_a(): pass\n", "REVIEW_REQUIRED"),
+        ("import pytest\n@pytest.mark.xfail(strict=True)\ndef test_a(): pass\n", "BLOCK"),
+        ("# Empty file\n", "REVIEW_REQUIRED"),
+        ("import pytest\npytest.skip('module skip', allow_module_level=True)\n", "REVIEW_REQUIRED"),
+        ("def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n", "PASS"),
+        ("import pytest\n@pytest.fixture\ndef broken(): raise RuntimeError('setup')\ndef test_a(broken): pass\n", "BLOCK"),
+        ("import pytest\n@pytest.fixture\ndef broken():\n    yield\n    raise RuntimeError('teardown')\ndef test_a(broken): pass\n", "BLOCK"),
+    ])
+    def test_real_pytest_required_evidence(tmp_path, body, expected):
+        (tmp_path / "test_a.py").write_text(body)
+        coverage_map.install_plugin(str(tmp_path))
+        result = SubprocessSandbox().run(
+            [sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", "-p", "rs_pytest_plugin"],
+            str(tmp_path), env={"RS_RESULT_PATH": ".reposhield/out/results.json"}, limits=Limits())
+        report = load_test_report(str(tmp_path / ".reposhield/out/results.json"), str(tmp_path))
+        assert report is not None
+        findings = required_result(report)
+        plan = TestPlan("FULL", "safe", [SelectedTest("test_a.py", "HIGH")], 1, [], [], True)
+        run_findings, _ = _test_findings(result, report, plan, Limits())
+>       assert aggregate(findings + run_findings)[0] == expected
+E       AssertionError: assert 'REVIEW_REQUIRED' == 'PASS'
+E         
+E         - PASS
+E         + REVIEW_REQUIRED
+
+tests\test_rs2_integrity.py:52: AssertionError
+============================== warnings summary ===============================
+reposhield\selector.py:23
+  C:\Users\pjpra\Desktop\reposhield\reposhield\selector.py:23: PytestCollectionWarning: cannot collect test class 'TestPlan' because it has a __init__ constructor (from: tests/test_rs2_integrity.py)
+    @dataclass
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_rs2_integrity.py::test_real_pytest_required_evidence[def test_a():\n    assert True\n-PASS]
+FAILED tests/test_rs2_integrity.py::test_real_pytest_required_evidence[def test_a(): assert True\nimport pytest\n@pytest.mark.skip\ndef test_b(): pass\n-PASS]
+================== 2 failed, 31 passed, 1 warning in 36.44s ===================

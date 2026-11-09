@@ -1,0 +1,1 @@
+linux Docker Desktop ["name=seccomp,profile=builtin","name=cgroupns"]

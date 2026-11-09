@@ -1,0 +1,56 @@
+{
+  "date_local": "2026-10-16",
+  "repository": "https://github.com/Repoguard-demo-org/Repoguard-demo",
+  "repository_id": 1421513676,
+  "organization_id": 343277690,
+  "user_id": 149040824,
+  "app_id": 5339672,
+  "installation_id": 171934598,
+  "uploaded_files": 29,
+  "baseline_file_differences": [],
+  "trusted_base": "07f22c74f0b9e42c715adef1573b767339e99e02",
+  "app_installation_validation": "live API verified; selected repository and requested permissions",
+  "oauth_login": "user confirmed repository list appears after correcting capital O in client ID",
+  "local_smoke": {
+    "kind": "base equals head; no-change baseline, not a PR",
+    "attempt_id": "5762184f77874a56b595530ca0105686",
+    "state": "completed",
+    "verdict": "PASS",
+    "checkpoint_id": "136ecaa53c6d48b5abbb9d3cdd722125",
+    "replay_authenticated": true
+  },
+  "anonymous_repository_api_status": 401,
+  "relay_checks": {
+    "get_ui": 404,
+    "get_repositories": 404,
+    "post_action_authorize": 404,
+    "unsigned_webhook_with_delivery_headers": 401,
+    "oversized_webhook": 413
+  },
+  "temporary_webhook_url": "https://hart-reaches-personality-exec.trycloudflare.com/api/v1/github/webhook",
+  "webhook": "Active; actual GitHub ping accepted with HTTP 202",
+  "open_pull_requests_observed": 1,
+  "main_protected_observed": false,
+  "live_pr_checks_and_merge_enforcement": "PR #1 docs-only PASS, authenticated evidence, duplicate delivery deduplication verified; negative cases and merge enforcement pending",
+  "dedicated_linux_acceptance": "pending",
+  "app_events": [
+    "pull_request"
+  ],
+  "live_webhook_deliveries": [
+    {
+      "id": 3848550330910375936,
+      "event": "installation",
+      "action": "new_permissions_accepted",
+      "status_code": 202,
+      "status": "OK"
+    },
+    {
+      "id": 3848550244899880960,
+      "event": "ping",
+      "action": null,
+      "status_code": 202,
+      "status": "OK"
+    }
+  ],
+  "pr_evidence": "pr-1.json"
+}

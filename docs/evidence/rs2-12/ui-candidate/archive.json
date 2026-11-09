@@ -1,0 +1,9 @@
+{
+  "archive": "reposhield-offline-windows-py310-20261017-v4-ui.zip",
+  "sha256": "7d92de2578a0ff074f2ec0e6c5b3571f1a140b62360dec81339daeddb9454bc5",
+  "bytes": 15911407,
+  "members": 122,
+  "manifest_verified": true,
+  "tests_match_source": true,
+  "scope": "Explicit allowlist; local candidate, not final release. Supplemental allowlist includes validation JSON/XML/lock and two sanitized UI screenshots. No private-key-pattern matches; not a comprehensive secret audit."
+}

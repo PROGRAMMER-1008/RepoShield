@@ -1,0 +1,13 @@
+{
+  "change_matches": 20,
+  "change_total": 20,
+  "policy_matches": 15,
+  "policy_total": 15,
+  "graph_equivalence": true,
+  "pending": [
+    "full-versus-selected execution timings",
+    "durable scheduler and signed authorization overhead",
+    "dedicated Linux acceptance",
+    "remaining GitHub acceptance"
+  ]
+}

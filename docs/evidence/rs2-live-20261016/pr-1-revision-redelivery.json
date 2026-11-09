@@ -1,0 +1,58 @@
+{
+  "date_local": "2026-10-16",
+  "pr_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/1",
+  "old_head": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+  "new_head": "b9d2be4edc01f778855b5f8baa17a2f5d7abe6c1",
+  "new_check_id": 116901120580,
+  "new_check_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/116901120580",
+  "new_check_conclusion": "success",
+  "checkpoint_id": "ea529b61cb2a4ea796e86a9c24bda65c",
+  "evidence_authenticated": true,
+  "original_event_redelivery": {
+    "id": 3848595863792254976,
+    "guid": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+    "event": "pull_request",
+    "action": "opened",
+    "status_code": 202,
+    "redelivery": true
+  },
+  "stored_checks": [
+    {
+      "attempt_id": "aa789bc261844595a280d6cf9e8ac503",
+      "head_sha": "45be28ba87af7b0e186915b0d87da6f38605cd20",
+      "check_id": 116893314396,
+      "checkpoint_id": "bd5a7568b2e140aeabeff317ba91a4e7",
+      "state": "published",
+      "tries": 0,
+      "error": null
+    },
+    {
+      "attempt_id": "715c7055f61a4c58a64c350af76cc068",
+      "head_sha": "b9d2be4edc01f778855b5f8baa17a2f5d7abe6c1",
+      "check_id": 116901120580,
+      "checkpoint_id": "ea529b61cb2a4ea796e86a9c24bda65c",
+      "state": "published",
+      "tries": 0,
+      "error": null
+    }
+  ],
+  "stored_deliveries": [
+    {
+      "id": "8bab9830-c93e-11f1-97cd-e57f688c7db7",
+      "action": "opened",
+      "state": "processed",
+      "attempt_id": "aa789bc261844595a280d6cf9e8ac503"
+    },
+    {
+      "id": "f179bae0-c941-11f1-8e78-a81e912b43b5",
+      "action": "synchronize",
+      "state": "processed",
+      "attempt_id": "715c7055f61a4c58a64c350af76cc068"
+    }
+  ],
+  "checks_and_deliveries_unchanged": true,
+  "limitations": [
+    "Already-processed A event was deduplicated after B; this does not exercise a previously unprocessed delayed A event or in-flight stale publication race.",
+    "No merge attempted."
+  ]
+}

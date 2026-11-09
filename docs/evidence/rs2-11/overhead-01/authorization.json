@@ -1,0 +1,142 @@
+[
+  {
+    "index": 0,
+    "authorize_ns": 11644500,
+    "issue_ns": 15578300,
+    "claim_ns": 19470300,
+    "replay_status": 409
+  },
+  {
+    "index": 1,
+    "authorize_ns": 14162900,
+    "issue_ns": 18665600,
+    "claim_ns": 14299900,
+    "replay_status": 409
+  },
+  {
+    "index": 2,
+    "authorize_ns": 10173600,
+    "issue_ns": 14324100,
+    "claim_ns": 13646000,
+    "replay_status": 409
+  },
+  {
+    "index": 3,
+    "authorize_ns": 16111100,
+    "issue_ns": 15299300,
+    "claim_ns": 15738200,
+    "replay_status": 409
+  },
+  {
+    "index": 4,
+    "authorize_ns": 13641500,
+    "issue_ns": 16386700,
+    "claim_ns": 15757700,
+    "replay_status": 409
+  },
+  {
+    "index": 5,
+    "authorize_ns": 14088200,
+    "issue_ns": 14636200,
+    "claim_ns": 15406200,
+    "replay_status": 409
+  },
+  {
+    "index": 6,
+    "authorize_ns": 12516100,
+    "issue_ns": 15132600,
+    "claim_ns": 15465300,
+    "replay_status": 409
+  },
+  {
+    "index": 7,
+    "authorize_ns": 11834000,
+    "issue_ns": 14778000,
+    "claim_ns": 15224000,
+    "replay_status": 409
+  },
+  {
+    "index": 8,
+    "authorize_ns": 14753400,
+    "issue_ns": 17246400,
+    "claim_ns": 19014100,
+    "replay_status": 409
+  },
+  {
+    "index": 9,
+    "authorize_ns": 14533000,
+    "issue_ns": 15189200,
+    "claim_ns": 16378400,
+    "replay_status": 409
+  },
+  {
+    "index": 10,
+    "authorize_ns": 14355200,
+    "issue_ns": 14647100,
+    "claim_ns": 14828700,
+    "replay_status": 409
+  },
+  {
+    "index": 11,
+    "authorize_ns": 13691300,
+    "issue_ns": 15604600,
+    "claim_ns": 14358100,
+    "replay_status": 409
+  },
+  {
+    "index": 12,
+    "authorize_ns": 15594400,
+    "issue_ns": 37077800,
+    "claim_ns": 16810700,
+    "replay_status": 409
+  },
+  {
+    "index": 13,
+    "authorize_ns": 14040100,
+    "issue_ns": 15432200,
+    "claim_ns": 15361300,
+    "replay_status": 409
+  },
+  {
+    "index": 14,
+    "authorize_ns": 13617200,
+    "issue_ns": 15510300,
+    "claim_ns": 14562100,
+    "replay_status": 409
+  },
+  {
+    "index": 15,
+    "authorize_ns": 14818700,
+    "issue_ns": 15804200,
+    "claim_ns": 14702500,
+    "replay_status": 409
+  },
+  {
+    "index": 16,
+    "authorize_ns": 14743700,
+    "issue_ns": 15094500,
+    "claim_ns": 14712900,
+    "replay_status": 409
+  },
+  {
+    "index": 17,
+    "authorize_ns": 14424900,
+    "issue_ns": 15947500,
+    "claim_ns": 15037700,
+    "replay_status": 409
+  },
+  {
+    "index": 18,
+    "authorize_ns": 14134300,
+    "issue_ns": 15666000,
+    "claim_ns": 16031600,
+    "replay_status": 409
+  },
+  {
+    "index": 19,
+    "authorize_ns": 19768400,
+    "issue_ns": 16045700,
+    "claim_ns": 14940400,
+    "replay_status": 409
+  }
+]

@@ -1,0 +1,44 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.restricted
+#1 transferring dockerfile: 485B 0.0s done
+#1 WARN: InvalidDefaultArgInFrom: Default value for ARG ${BASE} results in empty or invalid base image name (line 2)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/reposhield-runner:py312
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 2.31kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/reposhield-runner:py312@sha256:bbeddfa2510a08c7da0abc6a76a46d0a4be44642f78ea7a752ef0d39b09e20f0
+#5 resolve docker.io/library/reposhield-runner:py312@sha256:bbeddfa2510a08c7da0abc6a76a46d0a4be44642f78ea7a752ef0d39b09e20f0 0.0s done
+#5 DONE 0.1s
+
+#6 [2/4] RUN python -c "import pytest; assert pytest.__version__ == '9.1.1'"
+#6 DONE 0.3s
+
+#7 [3/4] COPY entry.py /opt/reposhield/entry.py
+#7 DONE 0.0s
+
+#8 [4/4] COPY pytest.ini /opt/reposhield/pytest.ini
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.2s done
+#9 exporting manifest sha256:3c3fa918fe4cc30148446aafe8294a033b5d18880aad2e2c3025bc2b7661736a 0.0s done
+#9 exporting config sha256:1ec64bfb4d0821fe791f29d30d561796d5c77264a209338d67e5750078f4472f 0.0s done
+#9 exporting attestation manifest sha256:704ab8ef0d2a34ddd1d1e44643c9298ec27b4893c8d475f61f865c4d3d3b9b16 0.0s done
+#9 exporting manifest list sha256:960f2bde88ab64a80914d42383e9905839586c116e412267e5b78c4d38499404 0.0s done
+#9 naming to docker.io/library/reposhield-restricted:rs206 done
+#9 unpacking to docker.io/library/reposhield-restricted:rs206 0.1s done
+#9 DONE 0.3s
+
+ 1 warning found (use docker --debug to expand):
+ - InvalidDefaultArgInFrom: Default value for ARG ${BASE} results in empty or invalid base image name (line 2)

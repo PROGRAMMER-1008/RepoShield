@@ -1,0 +1,305 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Run 4cd7579ca7a2469aac84c7164b005081 · RepoShield</title><style>
+:root{--bg:#fff;--fg:#1f2328;--mut:#656d76;--bd:#d0d7de;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--mut:#8b949e;--bd:#30363d;--card:#161b22}}
+*{box-sizing:border-box}body{font:14px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--fg);max-width:1150px;margin:0 auto;padding:20px}
+a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}h1{font-size:20px;margin:0 0 4px}.m{color:var(--mut)}
+.badge{display:inline-block;padding:1px 8px;border-radius:10px;color:#fff;font-size:12px;font-weight:600;white-space:nowrap}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 14px}.card b{font-size:22px;display:block}
+table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--bd);padding:7px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:500}
+form{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px;margin:14px 0;display:flex;gap:8px;flex-wrap:wrap;align-items:end}
+label{font-size:12px;color:var(--mut);display:block}input{padding:5px 8px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--fg)}
+button{padding:6px 14px;border:0;border-radius:6px;background:#1f6feb;color:#fff;cursor:pointer}
+iframe{width:100%;height:900px;border:1px solid var(--bd);border-radius:8px;background:#fff}code{font:12px ui-monospace,monospace}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;background:var(--card);border-radius:8px}nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}nav form{margin-left:auto}section{margin:22px 0}h2{font-size:17px}.notice{border-left:4px solid #bf8700;padding:10px 14px;background:var(--card)}</style></head><body><nav><a href="/ui">RepoShield</a> · <a href="/ui/settings">Policy and settings</a> · reviewer / reviewer<form method="post" action="/ui/logout"><input type="hidden" name="csrf" value="REMOVED"><button type="submit">Sign out</button></form></nav><main><h1>Run 4cd7579ca7a2469aac84c7164b005081</h1><p>VERIFICATION ONLY · State: <strong>completed</strong></p><h2>Stored result</h2><pre>{
+  &quot;verdict&quot;: &quot;PASS&quot;,
+  &quot;findings&quot;: [
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;check&quot;,
+      &quot;message&quot;: &quot;all changed Python files parse&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;python-syntax&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;rule_type&quot;: &quot;analysis&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;check&quot;,
+      &quot;message&quot;: &quot;no secrets in added lines&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;secret-scan&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;rule_type&quot;: &quot;secrets&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;NOT_APPLICABLE&quot;,
+      &quot;source&quot;: &quot;check&quot;,
+      &quot;message&quot;: &quot;no dependency manifests changed&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;dependency-change&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;rule_type&quot;: &quot;dependencies&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;check&quot;,
+      &quot;message&quot;: &quot;no tests removed, weakened or skipped&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;test-integrity&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;rule_type&quot;: &quot;test_integrity&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no new forbidden dependencies&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;payment-isolation&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;rule_type&quot;: &quot;forbidden_import&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;NOT_APPLICABLE&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no matching changed files&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;authentication-tests&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;rule_type&quot;: &quot;policy&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;NOT_APPLICABLE&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no matching changed files&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;public-api-tests&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;rule_type&quot;: &quot;policy&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;NOT_APPLICABLE&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no matching changed files&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;production-config&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;rule_type&quot;: &quot;policy&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no forbidden paths touched&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;dangerous-files&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;rule_type&quot;: &quot;forbidden_path&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;NOT_APPLICABLE&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;no matching changed files&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;ledger-full-suite&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;rule_type&quot;: &quot;policy&quot;
+    },
+    {
+      &quot;effect&quot;: &quot;NONE&quot;,
+      &quot;result&quot;: &quot;PASS&quot;,
+      &quot;source&quot;: &quot;policy&quot;,
+      &quot;message&quot;: &quot;4 changed lines (limit 400)&quot;,
+      &quot;on_fail&quot;: null,
+      &quot;rule_id&quot;: &quot;change-size&quot;,
+      &quot;evidence&quot;: [],
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;rule_type&quot;: &quot;max_changed_lines&quot;
+    }
+  ],
+  &quot;plan&quot;: {
+    &quot;mode&quot;: &quot;NONE&quot;,
+    &quot;tests&quot;: [],
+    &quot;total&quot;: 9,
+    &quot;ignored&quot;: [
+      &quot;README.md&quot;
+    ],
+    &quot;selected&quot;: 0,
+    &quot;strategy&quot;: &quot;safe&quot;,
+    &quot;reduction_pct&quot;: 100.0,
+    &quot;fallback_reasons&quot;: []
+  },
+  &quot;execution_availability&quot;: {
+    &quot;reason&quot;: &quot;restricted executor is unavailable until RS2 06&quot;,
+    &quot;status&quot;: &quot;NOT_NEEDED&quot;,
+    &quot;executed&quot;: 0
+  }
+}</pre><h2>Stages</h2><pre>[
+  {
+    &quot;stage&quot;: &quot;aggregate&quot;,
+    &quot;state&quot;: &quot;succeeded&quot;,
+    &quot;tries&quot;: 1
+  },
+  {
+    &quot;stage&quot;: &quot;analyze&quot;,
+    &quot;state&quot;: &quot;succeeded&quot;,
+    &quot;tries&quot;: 1
+  },
+  {
+    &quot;stage&quot;: &quot;publish&quot;,
+    &quot;state&quot;: &quot;succeeded&quot;,
+    &quot;tries&quot;: 1
+  },
+  {
+    &quot;stage&quot;: &quot;snapshot&quot;,
+    &quot;state&quot;: &quot;succeeded&quot;,
+    &quot;tries&quot;: 1
+  },
+  {
+    &quot;stage&quot;: &quot;tests&quot;,
+    &quot;state&quot;: &quot;succeeded&quot;,
+    &quot;tries&quot;: 1
+  }
+]</pre><h2>Input identity</h2><pre>{
+  &quot;base_sha&quot;: &quot;14b6c9ab8735d8e09d502b33ef3138bd1140fcef&quot;,
+  &quot;head_sha&quot;: &quot;bc35e2eb406dc0aa6d0b1efce9714d0d2e714c27&quot;,
+  &quot;policy_epoch&quot;: 1,
+  &quot;implementation_digest&quot;: &quot;20ddf4fd7852c2e61979b95b50c99e7d7defe9941067cd1c1c26483ef7c9b788&quot;,
+  &quot;profile&quot;: &quot;static-verification-v1-no-executor&quot;
+}</pre><h2>Audit timeline</h2><pre>[
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.682992+00:00&quot;,
+    &quot;kind&quot;: &quot;ATTEMPT_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;verdict&quot;: &quot;PASS&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.682992+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;publish&quot;,
+      &quot;task_id&quot;: &quot;acb4737e2d2b43d0b4bad1696b683d3e&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.660625+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_CLAIMED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;publish&quot;,
+      &quot;task_id&quot;: &quot;acb4737e2d2b43d0b4bad1696b683d3e&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.651445+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;aggregate&quot;,
+      &quot;task_id&quot;: &quot;77536e271a3b43a4982971016f4a3911&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.632246+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_CLAIMED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;aggregate&quot;,
+      &quot;task_id&quot;: &quot;77536e271a3b43a4982971016f4a3911&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.623933+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;tests&quot;,
+      &quot;task_id&quot;: &quot;f4f40ebd001540038ea479806ab7c743&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.604833+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_CLAIMED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;tests&quot;,
+      &quot;task_id&quot;: &quot;f4f40ebd001540038ea479806ab7c743&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:36.594307+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;analyze&quot;,
+      &quot;task_id&quot;: &quot;34709e40980640f8ac0a9d2b790741ba&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:35.575608+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_CLAIMED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;analyze&quot;,
+      &quot;task_id&quot;: &quot;34709e40980640f8ac0a9d2b790741ba&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:35.561807+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_COMPLETED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;snapshot&quot;,
+      &quot;task_id&quot;: &quot;9dee1aedad2544d694f3cb7d89602906&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:35.475230+00:00&quot;,
+    &quot;kind&quot;: &quot;TASK_CLAIMED&quot;,
+    &quot;actor_id&quot;: &quot;ui-test&quot;,
+    &quot;data&quot;: {
+      &quot;epoch&quot;: 1,
+      &quot;stage&quot;: &quot;snapshot&quot;,
+      &quot;task_id&quot;: &quot;9dee1aedad2544d694f3cb7d89602906&quot;
+    }
+  },
+  {
+    &quot;created_at&quot;: &quot;2026-10-14T22:39:35.391766+00:00&quot;,
+    &quot;kind&quot;: &quot;ATTEMPT_QUEUED&quot;,
+    &quot;actor_id&quot;: &quot;actor&quot;,
+    &quot;data&quot;: {
+      &quot;run_id&quot;: &quot;9f463b27595d42999378e13df9d72f9c&quot;
+    }
+  }
+]</pre><p class=m>Most recent 100 events; full history remains in trusted storage.</p></main></body></html>

@@ -1,0 +1,59 @@
+{
+  "date_local": "2026-10-16",
+  "pr_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/2",
+  "head_sha": "991f198e773d7b2f702086e9f56e04bbaf433765",
+  "base_sha": "07f22c74f0b9e42c715adef1573b767339e99e02",
+  "state": "open",
+  "merged": false,
+  "mergeable": true,
+  "mergeable_state": "blocked",
+  "files": [
+    {
+      "filename": ".github/workflows/reposhield-denied.txt",
+      "status": "added"
+    }
+  ],
+  "checks": [
+    {
+      "id": 116898667750,
+      "name": "RepoShield / verification",
+      "head_sha": "991f198e773d7b2f702086e9f56e04bbaf433765",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/116898667750",
+      "output": {
+        "title": "BLOCK: policy or verification failed",
+        "summary": "Head-only verification for 991f198e773d7b2f702086e9f56e04bbaf433765. Evidence checkpoint 18bc4fa94f87483e842eea40d68a01aa. Dynamic execution integration and dedicated-host acceptance remain pending.",
+        "text": null,
+        "annotations_count": 0,
+        "annotations_url": "https://api.github.com/repos/Repoguard-demo-org/Repoguard-demo/check-runs/116898667750/annotations"
+      }
+    }
+  ],
+  "stored_checks": [
+    {
+      "attempt_id": "a211bc0b538146ccae41046802e6dc8c",
+      "head_sha": "991f198e773d7b2f702086e9f56e04bbaf433765",
+      "check_id": 116898667750,
+      "checkpoint_id": "18bc4fa94f87483e842eea40d68a01aa",
+      "state": "published",
+      "tries": 0,
+      "error": null
+    }
+  ],
+  "stored_deliveries": [
+    {
+      "id": "04b8c070-c941-11f1-9ce1-527ef463f13c",
+      "event": "pull_request",
+      "action": "opened",
+      "state": "processed",
+      "tries": 0,
+      "error": null,
+      "attempt_id": "a211bc0b538146ccae41046802e6dc8c"
+    }
+  ],
+  "evidence_authenticated": true,
+  "merge_attempt_performed": false,
+  "operator_report": "BLOCK: policy or verification failed",
+  "operator_bypass_availability_confirmed": false
+}

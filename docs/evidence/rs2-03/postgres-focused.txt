@@ -1,0 +1,41 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-8.3.3, pluggy-1.6.0 -- C:\Users\pjpra\Desktop\reposhield\.venv-rs2\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\pjpra\Desktop\reposhield
+configfile: pyproject.toml
+collecting ... collected 26 items
+
+tests/test_durable.py::test_migrations_roundtrip_and_postgres_constraints PASSED [  3%]
+tests/test_durable.py::test_duplicate_intake_and_explicit_reruns_are_transactional PASSED [  7%]
+tests/test_durable.py::test_intake_rolls_back_if_event_persistence_fails PASSED [ 11%]
+tests/test_durable.py::test_two_workers_cannot_claim_or_finalize_the_same_lease PASSED [ 15%]
+tests/test_durable.py::test_restart_reclaims_expired_work_and_fences_old_worker PASSED [ 19%]
+tests/test_durable.py::test_heartbeat_keeps_live_worker_and_does_not_resurrect_expired_lease PASSED [ 23%]
+tests/test_durable.py::test_expired_lease_cannot_finalize_even_before_recovery PASSED [ 26%]
+tests/test_durable.py::test_retry_budget_is_bounded_and_cancels_dependents[False] PASSED [ 30%]
+tests/test_durable.py::test_retry_budget_is_bounded_and_cancels_dependents[True] PASSED [ 34%]
+tests/test_durable.py::test_real_static_worker_dag_preserves_evidence_and_outbox[pr/docs-only-PASS] PASSED [ 38%]
+tests/test_durable.py::test_real_static_worker_dag_preserves_evidence_and_outbox[pr/safe-refactor-REVIEW_REQUIRED] PASSED [ 42%]
+tests/test_durable.py::test_real_static_worker_dag_preserves_evidence_and_outbox[pr/analytics-leak-BLOCK] PASSED [ 46%]
+tests/test_durable.py::test_publication_transaction_rolls_back_as_a_unit PASSED [ 50%]
+tests/test_durable.py::test_separate_worker_process_runs_actual_stage PASSED [ 53%]
+tests/test_durable.py::test_worker_process_crash_is_recovered_by_restarted_process PASSED [ 57%]
+tests/test_durable.py::test_worker_renews_lease_during_slow_stage PASSED [ 61%]
+tests/test_durable.py::test_two_independent_worker_processes_cannot_finalize_same_lease PASSED [ 65%]
+tests/test_durable.py::test_registered_base_and_implementation_profile_bind_logical_identity PASSED [ 69%]
+tests/test_durable.py::test_snapshot_failure_cannot_execute_tests_or_produce_green_result PASSED [ 73%]
+tests/test_durable.py::test_api_authentication_role_and_repository_guards PASSED [ 76%]
+tests/test_durable.py::test_cross_repository_run_ids_do_not_leak PASSED  [ 80%]
+tests/test_durable.py::test_session_ownership_expiration_and_revocation PASSED [ 84%]
+tests/test_durable.py::test_action_execution_and_approval_never_anonymous_or_agent_approved PASSED [ 88%]
+tests/test_durable.py::test_coordinator_requires_identity_configuration PASSED [ 92%]
+tests/test_durable.py::test_durable_store_rejects_sqlite PASSED          [ 96%]
+tests/test_static_git_boundary.py::test_git_diff_helpers_are_never_executed PASSED [100%]
+
+============================== warnings summary ===============================
+.venv-rs2\lib\site-packages\starlette\testclient.py:40
+  C:\Users\pjpra\Desktop\reposhield\.venv-rs2\lib\site-packages\starlette\testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 26 passed, 1 warning in 20.93s ========================

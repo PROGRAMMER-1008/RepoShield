@@ -1,0 +1,7 @@
+{
+  "archive": "reposhield-candidate-20261016-v2.zip",
+  "sha256": "fb6cce13fa9fc66c3dd18c179bcf59f6f1669d151268a0a202a2f573dc6a9f7f",
+  "members": 66,
+  "manifest_verified": true,
+  "scope": "explicit allowlist and private-key-pattern checks, not a comprehensive secret audit"
+}

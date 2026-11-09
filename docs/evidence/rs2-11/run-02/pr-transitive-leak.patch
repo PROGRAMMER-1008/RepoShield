@@ -1,0 +1,17 @@
+diff --git a/common/money.py b/common/money.py
+index e2f5fe0..1c5a78d 100644
+--- a/common/money.py
++++ b/common/money.py
+@@ -1,8 +1,12 @@
++from analytics.client import track
++
++
+ def to_cents(amount) -> int:
+     """Convert a decimal amount (str/float/int) to integer cents."""
+     cents = round(float(amount) * 100)
+     if cents < 0:
+         raise ValueError("amount must not be negative")
++    track("to_cents", cents=cents)
+     return int(cents)
+ 
+ 

@@ -1,0 +1,210 @@
+{
+  "installed_module": "C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-release\\installed\\reposhield\\__init__.py",
+  "image": "postgres:17@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3",
+  "rounds": [
+    {
+      "round": 1,
+      "runs": [
+        {
+          "branch": "pr/docs-only",
+          "verdict": "PASS",
+          "attempt_id": "8d25310304514baebc48a244a6671396"
+        },
+        {
+          "branch": "pr/analytics-leak",
+          "verdict": "BLOCK",
+          "attempt_id": "a82255f70df24b76a7db869bcab82627"
+        },
+        {
+          "branch": "pr/safe-refactor",
+          "verdict": "REVIEW_REQUIRED",
+          "attempt_id": "240510567def4d8e85ceae54ebaa69f5"
+        }
+      ],
+      "tables": {
+        "action_requests": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "6f9a82838fbf0609c0cb58746de62b29cc5aa712f5b356872868f8866926a553"
+        },
+        "approvals": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": {
+          "rows": 3,
+          "sha256": "7bf76fcd7e21a4c89f9d976f914b608a37216cc75c2f7feaab42dc412b1282e6"
+        },
+        "authorizations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "decisions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "events": {
+          "rows": 36,
+          "sha256": "cc5a5205070c0bdd1c141122ff52d178e11fb6840729a5175dc89ea6395763a6"
+        },
+        "evidence_checkpoints": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "executions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_checks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_deliveries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_installations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outbox": {
+          "rows": 3,
+          "sha256": "acc56e2dc319c2261065d0fcd52d38cc7907902d8bb02b218cecf96e5c7d50ff"
+        },
+        "repositories": {
+          "rows": 1,
+          "sha256": "f51b448d1e20d5be13f69540e2ec69ea111acc34c04c496ece2f23db145d7ac2"
+        },
+        "runs": {
+          "rows": 3,
+          "sha256": "8f29920752df14e4e0e7a2fe6ed1e895575d6e300af4fdeef262c887e704a4c9"
+        },
+        "session_scopes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "task_dependencies": {
+          "rows": 12,
+          "sha256": "f614665453e36bf3a10e5ff8e4004b140ecaf88cfa4070123fb47fc4c62f3cc1"
+        },
+        "tasks": {
+          "rows": 15,
+          "sha256": "db416ddaaa9ba2cfd1bc447e8d87d5999e956173010d394b11cd322ab0d10ed4"
+        }
+      },
+      "backup_sha256": "bb2b32e69294957808bc0e400952829572915bc210f4439ac43b7c507324ab16",
+      "restore_equal": true,
+      "restart_equal": true
+    },
+    {
+      "round": 2,
+      "runs": [
+        {
+          "branch": "pr/docs-only",
+          "verdict": "PASS",
+          "attempt_id": "b48dc936b9d74c4a90a6ffc2462aa52d"
+        },
+        {
+          "branch": "pr/analytics-leak",
+          "verdict": "BLOCK",
+          "attempt_id": "5a8f25ef2cf64ee5b40fdc537e387b03"
+        },
+        {
+          "branch": "pr/safe-refactor",
+          "verdict": "REVIEW_REQUIRED",
+          "attempt_id": "035c87f12f8045e6839d97c8f37e5c31"
+        }
+      ],
+      "tables": {
+        "action_requests": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "6f9a82838fbf0609c0cb58746de62b29cc5aa712f5b356872868f8866926a553"
+        },
+        "approvals": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": {
+          "rows": 3,
+          "sha256": "54c256d56a51aaf30f33d2873d9f39b797163d1a4a1177a0edfa9491cfbd02dc"
+        },
+        "authorizations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "decisions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "events": {
+          "rows": 36,
+          "sha256": "13116471a41613d8ffe49bbe112977d7fb3d27adb3ffeb1981dd123b9726da21"
+        },
+        "evidence_checkpoints": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "executions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_checks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_deliveries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_installations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outbox": {
+          "rows": 3,
+          "sha256": "d65cc65899e7a4424a7ebc06620be51509492af3ef5c63e69b3cee3571c21654"
+        },
+        "repositories": {
+          "rows": 1,
+          "sha256": "dd8b965613ac5ded03c993d64899c3217bb53fb3c9dee21993b6a0a6d46073ff"
+        },
+        "runs": {
+          "rows": 3,
+          "sha256": "3714f2b22dfe5b1194c4d44ce47896b60d7f97ad1b8437f216d96d180aa55359"
+        },
+        "session_scopes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "task_dependencies": {
+          "rows": 12,
+          "sha256": "98c5747be19307435e27ee560910f3066c50d75b5e545e2cffac185a24e619aa"
+        },
+        "tasks": {
+          "rows": 15,
+          "sha256": "62b39f753e531641dd12a3132081fdf87a87fb3d5eb18dced7edf1a08dfe43b7"
+        }
+      },
+      "backup_sha256": "0bb4e090795bc5a386d1ea6f8625b6b028b1a09c6a35f9c6ab90e11e80d5cf53",
+      "restore_equal": true,
+      "restart_equal": true
+    }
+  ],
+  "scope": "same-host installed-wheel static DAG and database recovery; not full isolated product demo",
+  "disposable_container_removed": true
+}

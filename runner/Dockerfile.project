@@ -1,0 +1,7 @@
+# Extend the base runner with your project's dependencies.
+#   docker build -t reposhield-runner:py312 -f runner/Dockerfile runner            (base, once)
+#   docker build -t reposhield-runner:project -f runner/Dockerfile.project .       (run from your project root)
+# then set  sandbox.image: reposhield-runner:project  in .reposhield.yml
+FROM reposhield-runner:py312
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt && rm /tmp/requirements.txt

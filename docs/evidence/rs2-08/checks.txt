@@ -1,0 +1,26 @@
+RS2 08 validation, 12 October 2026 (Asia/Calcutta)
+
+Local VM inventory (elevated, read-only): wsl --list --verbose
+Only docker-desktop, running, WSL version 2.
+Get-Command VBoxManage,virsh,Get-VM found no available command.
+Dedicated Linux VM validation remains pending. User explicitly authorized RS2 08 fallback.
+
+Full suite: 344 passed, 1 skipped, 1 warning in 236.01s.
+Final isolated session-context refinement: all 26 evidence tests passed, 1 warning in 15.68s.
+See full-suite.txt and final-evidence-suite.txt for actual command output.
+
+.venv-rs2/Scripts/python -m pip check
+Exit 0: No broken requirements found.
+
+.venv-rs2/Scripts/python -m compileall -q reposhield tests
+Exit 0 before final isolated refinement; final changed modules imported by focused tests.
+
+Final wheel build exited 0. See package-build.txt and wheel-check.txt.
+
+Cleanup: reposhield-rs208-db stopped; --rm removes the disposable container.
+docker ps -a --filter label=reposhield.restricted=true --format '{{.Names}}'
+No output.
+docker ps -a --filter name=reposhield-protected- --format '{{.Names}}'
+No output.
+
+No paid services, billable API calls, model dependency or new Python dependency.

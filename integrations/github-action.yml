@@ -1,0 +1,43 @@
+# Copy to .github/workflows/reposhield.yml in the repository you want to protect.
+# Then mark the "RepoShield" check as REQUIRED in branch protection / rulesets.
+#
+# Security notes
+#  * uses `pull_request` (not pull_request_target): fork PRs get no secrets.
+#  * RepoShield reads .reposhield.yml from the BASE branch, so a PR cannot weaken its own policy.
+#  * PR code runs on the runner; the GitHub-hosted VM is ephemeral, but do not expose secrets to this job.
+name: RepoShield
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+      - run: git fetch origin ${{ github.base_ref }}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Install RepoShield and your project's test dependencies
+        run: |
+          pip install pyyaml pytest coverage
+          pip install git+https://github.com/<you>/reposhield.git      # or: pip install reposhield
+          [ -f requirements.txt ] && pip install -r requirements.txt || true
+      - name: Verify change
+        run: |
+          set +e
+          reposhield verify --base origin/${{ github.base_ref }} --head ${{ github.event.pull_request.head.sha }} \
+            --sandbox subprocess --format markdown > reposhield-report.md
+          code=$?
+          cat reposhield-report.md >> "$GITHUB_STEP_SUMMARY"
+          exit $code          # 0 PASS · 1 BLOCK · 2 REVIEW_REQUIRED · 3 tool error  (all non-zero fail the check)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reposhield-run
+          path: .git/reposhield/runs/

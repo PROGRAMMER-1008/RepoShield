@@ -1,0 +1,11 @@
+{
+  "wheel": ".rs2-03-dist\\reposhield-0.2.1-py3-none-any.whl",
+  "sha256": "8a54687d74714ca1155cf353497ab3b843549368d249e7c59c0287de86db222b",
+  "verified_sources": [
+    "reposhield/server/browser_auth.py",
+    "reposhield/server/product_ui.py",
+    "reposhield/server/coordinator.py",
+    "reposhield/server/config.py",
+    "reposhield/cli.py"
+  ]
+}

@@ -1,0 +1,68 @@
+version: 1
+project:
+  name: payments-api
+
+verification:
+  test_mode: impacted
+  strategy: safe
+  test_integrity: review
+
+policies:
+  - id: payment-isolation
+    severity: critical
+    description: Payment code cannot depend on analytics code
+    rules:
+      - type: forbidden_import
+        from: "payments/**"
+        to: "analytics/**"
+        transitive: true
+
+  - id: authentication-tests
+    severity: high
+    description: Authentication changes require the authentication tests to run and pass
+    when: {changed: ["auth/**"]}
+    rules:
+      - type: required_test
+        paths: ["tests/auth/**"]
+
+  - id: public-api-tests
+    severity: high
+    description: Public API changes require the API tests to run and pass
+    when: {changed: ["api/**"]}
+    rules:
+      - type: required_test
+        paths: ["tests/api/**"]
+
+  - id: production-config
+    severity: critical
+    description: Production configuration requires manual review
+    when: {changed: ["config/production/**"]}
+    rules:
+      - type: require_review
+
+  - id: dangerous-files
+    severity: critical
+    description: CI workflows and credentials must never be modified by an autonomous change
+    rules:
+      - type: forbidden_path
+        paths: [".github/workflows/**", "*.pem", ".env"]
+
+  - id: ledger-full-suite
+    severity: high
+    description: Ledger changes always run the entire suite
+    when: {changed: ["payments/database.py"]}
+    rules:
+      - type: test_mode
+        mode: full
+
+  - id: change-size
+    severity: medium
+    description: Very large autonomous changes need a human look
+    rules:
+      - type: max_changed_lines
+        max: 400
+
+actions:
+  allow: ["python -m pytest *", "pytest *", "python -m pytest"]
+  deny: ["rm *", "curl *", "wget *", "git push*", "pip install*", "sh *", "bash *"]
+  max_ttl_seconds: 60

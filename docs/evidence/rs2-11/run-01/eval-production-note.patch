@@ -1,0 +1,7 @@
+diff --git a/config/production/note.txt b/config/production/note.txt
+new file mode 100644
+index 0000000..70f85ce
+--- /dev/null
++++ b/config/production/note.txt
+@@ -0,0 +1 @@
++Synthetic config note

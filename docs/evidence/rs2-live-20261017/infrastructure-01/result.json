@@ -1,0 +1,52 @@
+{
+  "schema": "rs_live_fault_0522abdd3db24093986429bc63587c43",
+  "trigger": "explicit operator rerun, not a webhook",
+  "pr": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/3",
+  "head": "b4bd389de34956fdc49c00e6609adc29db60b800",
+  "schema_retained_for_audit": true,
+  "attempt_id": "fdf882f152714bfc80350930f11d01ec",
+  "state": "failed-infrastructure",
+  "result": null,
+  "tasks": [
+    {
+      "stage": "aggregate",
+      "state": "cancelled",
+      "tries": 0,
+      "error": null
+    },
+    {
+      "stage": "analyze",
+      "state": "cancelled",
+      "tries": 0,
+      "error": null
+    },
+    {
+      "stage": "publish",
+      "state": "cancelled",
+      "tries": 0,
+      "error": null
+    },
+    {
+      "stage": "snapshot",
+      "state": "failed",
+      "tries": 3,
+      "error": "GitError"
+    },
+    {
+      "stage": "tests",
+      "state": "cancelled",
+      "tries": 0,
+      "error": null
+    }
+  ],
+  "check_id": 117382557634,
+  "check_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/117382557634",
+  "conclusion": "failure",
+  "title": "Infrastructure failure",
+  "checkpoint_id": "339c7346ce6e462ba4815b81256be174",
+  "authenticated": true,
+  "mergeable_state": "blocked",
+  "retry_backoff_accelerated": true,
+  "live_mirror_untouched": true,
+  "merge_attempted": false
+}

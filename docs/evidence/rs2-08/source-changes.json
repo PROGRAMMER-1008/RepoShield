@@ -1,0 +1,16 @@
+{
+  "compared_with": ".rs2-08-original.zip",
+  "changed_or_added_source_files": [
+    "reposhield/evidence.py",
+    "reposhield/server/admin.py",
+    "reposhield/server/coordinator.py",
+    "reposhield/server/durable.py",
+    "reposhield/server/evidence_service.py",
+    "reposhield/server/execution_service.py",
+    "reposhield/server/schema_v4.py",
+    "reposhield/server/signing.py",
+    "reposhield/server/migrations/versions/0004_evidence.py",
+    "tests/test_evidence.py"
+  ],
+  "source_control": "no root git repository"
+}

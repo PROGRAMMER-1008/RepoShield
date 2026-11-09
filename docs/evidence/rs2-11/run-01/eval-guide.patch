@@ -1,0 +1,7 @@
+diff --git a/docs/guide.md b/docs/guide.md
+new file mode 100644
+index 0000000..74ca49d
+--- /dev/null
++++ b/docs/guide.md
+@@ -0,0 +1 @@
++# Synthetic guide

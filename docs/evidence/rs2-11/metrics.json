@@ -1,0 +1,54 @@
+{
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "sources_sha256": {
+    "benchmark\\evaluate_v2.py": "3dcebaf68778d927ac34e64d63c10700e1f4edddf758bac4317a2c87cc2df20f",
+    "benchmark\\selection_v2.py": "b73e3fbe4f41955d7e9f236dccce14fceee489c9b6451f4c4f431fc0475d136e",
+    "benchmark\\test_overhead.py": "a309328f2d3803fb36a1396bbbba01daf3403cfcc55930dd3baea1b53dfb4467"
+  },
+  "full_ms": 19011,
+  "selected_ms": 17371,
+  "runtime_reduction_percent": 8.626584608910626,
+  "full_files": 108,
+  "selected_files": 34,
+  "detected_full": 12,
+  "detected_selected": 12,
+  "overhead_test_result": "2 passed, 1 warning in 7.32s",
+  "initial_overhead_setup_errors": 2,
+  "overhead": {
+    "scheduler": {
+      "enqueue_ns": {
+        "median_ms": 57.96185,
+        "min_ms": 54.0322,
+        "max_ms": 78.2814,
+        "samples": 20
+      },
+      "claim_ns": {
+        "median_ms": 7.9282,
+        "min_ms": 7.0172,
+        "max_ms": 43.5389,
+        "samples": 20
+      }
+    },
+    "authorization": {
+      "authorize_ns": {
+        "median_ms": 14.1486,
+        "min_ms": 10.1736,
+        "max_ms": 19.7684,
+        "samples": 20
+      },
+      "issue_ns": {
+        "median_ms": 15.5443,
+        "min_ms": 14.3241,
+        "max_ms": 37.0778,
+        "samples": 20
+      },
+      "claim_ns": {
+        "median_ms": 15.29265,
+        "min_ms": 13.646,
+        "max_ms": 19.4703,
+        "samples": 20
+      }
+    }
+  }
+}

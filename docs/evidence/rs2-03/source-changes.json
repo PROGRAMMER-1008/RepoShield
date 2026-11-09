@@ -1,0 +1,24 @@
+{
+  "modified": [
+    "reposhield\\cli.py",
+    "reposhield\\gitutil.py",
+    "reposhield\\server\\app.py",
+    "reposhield\\server\\config.py",
+    "pyproject.toml"
+  ],
+  "removed": [],
+  "added": [
+    "reposhield\\server\\admin.py",
+    "reposhield\\server\\coordinator.py",
+    "reposhield\\server\\durable.py",
+    "reposhield\\server\\identities.py",
+    "reposhield\\server\\process_worker.py",
+    "reposhield\\server\\schema_v1.py",
+    "reposhield\\server\\migrations\\env.py",
+    "reposhield\\server\\migrations\\__init__.py",
+    "reposhield\\server\\migrations\\versions\\0001_foundation.py",
+    "reposhield\\server\\migrations\\versions\\__init__.py",
+    "tests\\test_durable.py",
+    "tests\\test_static_git_boundary.py"
+  ]
+}

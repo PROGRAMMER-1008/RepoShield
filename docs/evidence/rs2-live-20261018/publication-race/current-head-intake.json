@@ -1,0 +1,8 @@
+{
+  "trigger": "explicit operator-created local intake, not GitHub webhook delivery",
+  "delivery_id": "operator-post-race-6c846c5f47004af4be0efd55f4d16874",
+  "receipt": {
+    "duplicate": false,
+    "state": "pending"
+  }
+}

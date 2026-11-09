@@ -1,0 +1,33 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_______ test_unsigned_analysis_cache_cannot_erase_dependency_violation ________
+
+demo_repo = 'C:\\Users\\pjpra\\Desktop\\reposhield\\.test-rs2-cache-poison\\demo0\\repo'
+
+    def test_unsigned_analysis_cache_cannot_erase_dependency_violation(demo_repo):
+        from reposhield import ANALYZER_VERSION
+        from reposhield.analyzer import ParseCache
+        from reposhield.engine import state_dir_for
+        from reposhield.gitutil import GitTree, resolve
+        from reposhield.graph import Graph
+        state = Path(state_dir_for(demo_repo))
+>       (state / "cache").mkdir(exist_ok=True)
+
+tests\test_rs2_integrity.py:162: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/pjpra/Desktop/reposhield/.test-rs2-cache-poison/demo0/repo/.git/reposhield/cache')
+mode = 511, parents = False, exist_ok = True
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           self._accessor.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\pjpra\\Desktop\\reposhield\\.test-rs2-cache-poison\\demo0\\repo\\.git\\reposhield\\cache'
+
+..\..\AppData\Local\Programs\Python\Python310\lib\pathlib.py:1175: FileNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_rs2_integrity.py::test_unsigned_analysis_cache_cannot_erase_dependency_violation
+1 failed, 41 deselected in 3.94s

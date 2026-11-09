@@ -1,0 +1,21 @@
+{
+  "schema": "rs_live_race_081af90c02ae4ecc9c04e21b035530bd",
+  "trigger": "explicit operator rerun, not a webhook",
+  "pr": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/1",
+  "head": "b9d2be4edc01f778855b5f8baa17a2f5d7abe6c1",
+  "schema_retained_for_audit": true,
+  "passed": true,
+  "old_head": "b9d2be4edc01f778855b5f8baa17a2f5d7abe6c1",
+  "new_head": "0f9f6a80cb8934a73c9b9fdf27d390b84d3e5b22",
+  "attempt_id": "409e6c8815c24eb19423a4ceb0b0c7ac",
+  "genuine_verdict": "PASS",
+  "check_id": 117738405148,
+  "check_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/117738405148",
+  "state": "obsolete",
+  "conclusion_before_cleanup": null,
+  "cleanup_conclusion": "cancelled",
+  "checkpoint_id": "683807785c3f439d8a1b94bce7558d22",
+  "api_responses_simulated": false,
+  "final_read_race_validated": true,
+  "after_final_read_race_validated": false
+}

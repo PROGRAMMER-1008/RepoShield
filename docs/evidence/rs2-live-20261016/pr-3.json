@@ -1,0 +1,89 @@
+{
+  "date_local": "2026-10-16",
+  "pr_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/pull/3",
+  "head_sha": "b4bd389de34956fdc49c00e6609adc29db60b800",
+  "base_sha": "07f22c74f0b9e42c715adef1573b767339e99e02",
+  "state": "open",
+  "merged": false,
+  "mergeable": true,
+  "mergeable_state": "blocked",
+  "files": [
+    {
+      "filename": "auth/login.py",
+      "status": "modified"
+    }
+  ],
+  "checks": [
+    {
+      "id": 116900036606,
+      "name": "RepoShield / verification",
+      "head_sha": "b4bd389de34956fdc49c00e6609adc29db60b800",
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/Repoguard-demo-org/Repoguard-demo/runs/116900036606",
+      "output": {
+        "title": "REVIEW_REQUIRED: unresolved evidence or review",
+        "summary": "Head-only verification for b4bd389de34956fdc49c00e6609adc29db60b800. Evidence checkpoint ad03a2a734ea49c9bf01a1e501b3c0f2. Dynamic execution integration and dedicated-host acceptance remain pending.",
+        "text": null,
+        "annotations_count": 0,
+        "annotations_url": "https://api.github.com/repos/Repoguard-demo-org/Repoguard-demo/check-runs/116900036606/annotations"
+      }
+    }
+  ],
+  "stored_checks": [
+    {
+      "attempt_id": "c132b9a446374f96a0309c35d7ab770a",
+      "head_sha": "b4bd389de34956fdc49c00e6609adc29db60b800",
+      "check_id": 116900036606,
+      "checkpoint_id": "ad03a2a734ea49c9bf01a1e501b3c0f2",
+      "state": "published",
+      "tries": 0,
+      "error": null
+    }
+  ],
+  "stored_deliveries": [
+    {
+      "id": "88f2b260-c941-11f1-9922-02d04a8a31c1",
+      "event": "pull_request",
+      "action": "opened",
+      "state": "processed",
+      "tries": 0,
+      "error": null,
+      "attempt_id": "c132b9a446374f96a0309c35d7ab770a"
+    }
+  ],
+  "evidence_authenticated": true,
+  "merge_attempt_performed": false,
+  "verification": {
+    "verdict": "REVIEW_REQUIRED",
+    "tests": {
+      "reason": "disabled (--no-tests)",
+      "status": "NOT_RUN"
+    },
+    "selected_tests": [
+      "tests/auth/test_login.py",
+      "tests/auth/test_tokens.py"
+    ],
+    "required_test_findings": [
+      {
+        "effect": "REVIEW",
+        "result": "UNKNOWN",
+        "source": "policy",
+        "message": "required tests were not executed; cannot verify",
+        "on_fail": null,
+        "rule_id": "authentication-tests",
+        "evidence": [
+          {
+            "files": [
+              "tests/auth/test_login.py",
+              "tests/auth/test_tokens.py"
+            ]
+          }
+        ],
+        "severity": "high",
+        "rule_type": "required_test"
+      }
+    ],
+    "cache_eligible": false
+  }
+}

@@ -1,0 +1,28 @@
+RS2 09 local validation, 14 October 2026 (Asia/Calcutta)
+
+Focused expanded suite: 50 passed, 1 warning in 46.69s.
+Final full suite: 372 passed, 1 skipped, 1 warning in 254.01s.
+See focused.txt and full-suite.txt for actual command output.
+
+Real: PostgreSQL transactions/migrations, RSA and Ed25519 signatures, local Git
+objects/static verification worker, evidence checkpoints, Docker isolation and
+protected synthetic database regression tests.
+Simulated: GitHub REST responses and public-fetch command test boundary.
+No real GitHub App, installation, repository, PR, check or merge gate validated.
+User confirmed no existing setup and authorized local work with live acceptance pending.
+
+.venv-rs2/Scripts/python -m pip check
+Exit 0: No broken requirements found.
+
+.venv-rs2/Scripts/python -m compileall -q reposhield tests
+Exit 0.
+
+Wheel build exit 0; exact source matches and new entry point checked.
+See package-build.txt and wheel-check.txt.
+
+No dependencies added, paid services provisioned or billable APIs enabled.
+Dedicated Linux VM validation and verification-worker execution integration remain pending.
+
+Cleanup: reposhield-rs209-db stopped and removed by --rm.
+No containers returned by the restricted-runner label or protected-demo name filters.
+Cached images and unrelated Docker resources were retained.

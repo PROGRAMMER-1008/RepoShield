@@ -1,0 +1,9 @@
+{
+  "compared_with": ".rs2-07-original.zip",
+  "changed_or_added_source_files": [
+    "reposhield/protected_demo.py",
+    "tests/test_protected_database.py",
+    "tests/fixtures/protected_shop.sql"
+  ],
+  "source_control": "no root git repository"
+}

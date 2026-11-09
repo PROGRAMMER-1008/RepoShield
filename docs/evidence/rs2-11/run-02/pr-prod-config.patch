@@ -1,0 +1,8 @@
+diff --git a/config/production/settings.yaml b/config/production/settings.yaml
+new file mode 100644
+index 0000000..9162c3e
+--- /dev/null
++++ b/config/production/settings.yaml
+@@ -0,0 +1,2 @@
++debug: false
++replicas: 12

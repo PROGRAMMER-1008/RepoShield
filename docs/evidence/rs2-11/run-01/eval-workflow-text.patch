@@ -1,0 +1,7 @@
+diff --git a/.github/workflows/denied.txt b/.github/workflows/denied.txt
+new file mode 100644
+index 0000000..caf4353
+--- /dev/null
++++ b/.github/workflows/denied.txt
+@@ -0,0 +1 @@
++Harmless forbidden-path fixture

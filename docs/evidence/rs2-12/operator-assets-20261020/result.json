@@ -1,0 +1,30 @@
+{
+  "scope": "offline same-host actual operator asset restore; no live cutover",
+  "live_configuration_modified": false,
+  "credentials_exported_to_workspace": false,
+  "network_used": false,
+  "permanent_backup_created": false,
+  "restored_files_equal": [
+    "evidence-signing.pem",
+    "verification-keys.json",
+    "github-app.pem",
+    "github-app-config.json",
+    "github-webhook-secret.txt",
+    "oauth-secret.txt",
+    "ui-config.json",
+    "identities.json",
+    "operator-api-token.txt",
+    "local-runtime.json",
+    "start-demo.ps1"
+  ],
+  "restored_signing_key_verified": true,
+  "restored_app_key_verified": true,
+  "restored_operator_identity_verified": true,
+  "restored_app_ui_config_valid": true,
+  "restored_mirror_refs_equal": true,
+  "restored_mirror_fsck_passed": true,
+  "source_mirror_refs_unchanged": true,
+  "passed": true,
+  "source_assets_unchanged": true,
+  "temporary_secret_copies_removed": true
+}

@@ -1,0 +1,559 @@
+{
+  "schema_version": 2,
+  "attempt_id": "attempt_9713a75d91d845c49fcc2e39da3bb42b",
+  "execution_state": "completed",
+  "mode": "DEVELOPMENT EXECUTION",
+  "run_id": "rs_d96da41dd2c15c5d30ff71d5318e3ed4b3919262fd347362f06ecd0b550df9e6",
+  "verdict": "PASS",
+  "summary": "All mandatory checks passed.",
+  "cached": false,
+  "fingerprint": {
+    "schema_version": 2,
+    "repository": "c:\\users\\pjpra\\desktop\\reposhield\\docs\\evidence\\rs2-11\\run-02\\synthetic-repository",
+    "head": "ada8b78ad7f5047225201984babbe4c5637f2517",
+    "base": "45cf0862bd37a3e01bf0869fb77d3a35d1a9f47d",
+    "merge_base": "45cf0862bd37a3e01bf0869fb77d3a35d1a9f47d",
+    "execution_tree": "ada8b78ad7f5047225201984babbe4c5637f2517",
+    "policy_hash": "ba703d506afdf227f20650bf354bfc7ab01edd190a2ddf4ff4925212d6fdadfb",
+    "policy_text_hash": "881f118ad99be9f8ce936da8dc70ef5bdc31cb696a33bec458a0c735e7ab98e7",
+    "policy_source": "base:45cf0862",
+    "policy_errors": [],
+    "options": {
+      "strategy": null,
+      "run_tests": true,
+      "always_run_tests": false,
+      "trust_head_policy": false,
+      "policy_path": null,
+      "sandbox": "subprocess",
+      "untrusted_code": false,
+      "allow_insecure_sandbox": false,
+      "require_tests": false
+    },
+    "analyzer": "py-ast-2",
+    "tool": "0.2.1",
+    "implementation_digest": "20ddf4fd7852c2e61979b95b50c99e7d7defe9941067cd1c1c26483ef7c9b788",
+    "python": "3.10.11",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "runtime_packages": [
+      [
+        "Mako",
+        "1.4.3"
+      ],
+      [
+        "MarkupSafe",
+        "3.0.4"
+      ],
+      [
+        "PyYAML",
+        "6.0.3"
+      ],
+      [
+        "SQLAlchemy",
+        "2.0.54"
+      ],
+      [
+        "alembic",
+        "1.20.0"
+      ],
+      [
+        "annotated-types",
+        "0.8.0"
+      ],
+      [
+        "anyio",
+        "4.15.1"
+      ],
+      [
+        "certifi",
+        "2026.7.22"
+      ],
+      [
+        "cffi",
+        "2.1.1"
+      ],
+      [
+        "click",
+        "8.5.0"
+      ],
+      [
+        "colorama",
+        "0.4.6"
+      ],
+      [
+        "coverage",
+        "7.16.2"
+      ],
+      [
+        "cryptography",
+        "47.0.0"
+      ],
+      [
+        "exceptiongroup",
+        "1.3.1"
+      ],
+      [
+        "fastapi",
+        "0.115.0"
+      ],
+      [
+        "greenlet",
+        "3.5.6"
+      ],
+      [
+        "h11",
+        "0.16.0"
+      ],
+      [
+        "httpcore",
+        "1.0.9"
+      ],
+      [
+        "httpx",
+        "0.27.2"
+      ],
+      [
+        "idna",
+        "3.20"
+      ],
+      [
+        "iniconfig",
+        "2.3.1"
+      ],
+      [
+        "packaging",
+        "26.3"
+      ],
+      [
+        "pip",
+        "23.0.1"
+      ],
+      [
+        "pluggy",
+        "1.6.0"
+      ],
+      [
+        "psycopg",
+        "3.3.6"
+      ],
+      [
+        "psycopg-binary",
+        "3.3.6"
+      ],
+      [
+        "pycparser",
+        "3.11"
+      ],
+      [
+        "pydantic",
+        "2.14.0"
+      ],
+      [
+        "pydantic_core",
+        "2.50.0"
+      ],
+      [
+        "pytest",
+        "8.3.3"
+      ],
+      [
+        "reposhield",
+        "0.2.1"
+      ],
+      [
+        "reposhield",
+        "0.2.1"
+      ],
+      [
+        "setuptools",
+        "65.5.0"
+      ],
+      [
+        "sniffio",
+        "1.3.1"
+      ],
+      [
+        "starlette",
+        "0.38.6"
+      ],
+      [
+        "tomli",
+        "2.5.0"
+      ],
+      [
+        "typing-inspection",
+        "0.4.4"
+      ],
+      [
+        "typing_extensions",
+        "4.16.0"
+      ],
+      [
+        "tzdata",
+        "2026.5"
+      ],
+      [
+        "uvicorn",
+        "0.30.6"
+      ]
+    ],
+    "sandbox": "subprocess",
+    "runner_python": "C:\\Users\\pjpra\\Desktop\\reposhield\\.venv-rs2\\Scripts\\python.exe",
+    "runner_image": "reposhield-runner:py312",
+    "runner_image_digest": null,
+    "environment_policy": {
+      "profile": "scrubbed-subprocess-v1",
+      "bootstrap_digest": "b79281cf58cdab080729f77f05a93881cc8820274d1bba4224b07df146b4c48a"
+    },
+    "isolation_profile": {
+      "backend": "subprocess",
+      "security_boundary": false,
+      "network_isolated": false,
+      "rlimits": false,
+      "env_scrubbed": true,
+      "platform": "windows",
+      "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+    },
+    "limits": {
+      "timeout_seconds": 120,
+      "memory_mb": 2048,
+      "cpus": 2,
+      "pids": 256,
+      "max_output_bytes": 5242880,
+      "max_file_mb": 256,
+      "network": false,
+      "image": "reposhield-runner:py312"
+    },
+    "strategy": "safe",
+    "assurance_mode": "development",
+    "evidence_requirements": {
+      "require_tests": false,
+      "required_test_semantics": "ordinary-pass-per-file-v2"
+    },
+    "cache_policy": "disabled-until-authenticated-persistence",
+    "coverage_policy": "disabled-unsigned-coverage",
+    "effective_strategy": "safe",
+    "idempotency_key": "d96da41dd2c15c5d30ff71d5318e3ed4b3919262fd347362f06ecd0b550df9e6"
+  },
+  "project": "payments-api",
+  "changes": [
+    {
+      "status": "M",
+      "path": "payments/refund.py",
+      "added": 2,
+      "deleted": 0
+    }
+  ],
+  "graph": {
+    "files": 25,
+    "edges": 44,
+    "tests": 9,
+    "mode": "incremental",
+    "updated": 1,
+    "reparsed": 1,
+    "reused": 24,
+    "base_graph_cached": false
+  },
+  "impact": [
+    {
+      "file": "api/routes.py",
+      "distance": 1,
+      "confidence": 1.0,
+      "via": [
+        "payments/refund.py",
+        "api/routes.py"
+      ]
+    },
+    {
+      "file": "tests/payments/test_refund.py",
+      "distance": 1,
+      "confidence": 1.0,
+      "via": [
+        "payments/refund.py",
+        "tests/payments/test_refund.py"
+      ]
+    },
+    {
+      "file": "tests/api/test_routes.py",
+      "distance": 2,
+      "confidence": 1.0,
+      "via": [
+        "payments/refund.py",
+        "api/routes.py",
+        "tests/api/test_routes.py"
+      ]
+    }
+  ],
+  "impact_total": 3,
+  "plan": {
+    "mode": "IMPACTED",
+    "strategy": "safe",
+    "selected": 2,
+    "total": 9,
+    "reduction_pct": 77.8,
+    "fallback_reasons": [],
+    "ignored": [],
+    "tests": [
+      {
+        "path": "tests/api/test_routes.py",
+        "confidence": "HIGH",
+        "reasons": [
+          {
+            "changed": "payments/refund.py",
+            "kind": "static-dependency",
+            "path": [
+              "payments/refund.py",
+              "api/routes.py",
+              "tests/api/test_routes.py"
+            ],
+            "distance": 2
+          }
+        ]
+      },
+      {
+        "path": "tests/payments/test_refund.py",
+        "confidence": "HIGH",
+        "reasons": [
+          {
+            "changed": "payments/refund.py",
+            "kind": "static-dependency",
+            "path": [
+              "payments/refund.py",
+              "tests/payments/test_refund.py"
+            ],
+            "distance": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tests": {
+    "status": "RAN",
+    "executed": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "duration_ms": 719,
+    "timed_out": false,
+    "backend": "subprocess",
+    "isolation": {
+      "backend": "subprocess",
+      "security_boundary": false,
+      "network_isolated": false,
+      "rlimits": false,
+      "env_scrubbed": true,
+      "platform": "windows",
+      "note": "dev backend - use docker for untrusted code; Windows: no memory/CPU limits and no network isolation"
+    },
+    "output_truncated": false
+  },
+  "findings": [
+    {
+      "source": "check",
+      "rule_id": "python-syntax",
+      "rule_type": "analysis",
+      "result": "PASS",
+      "severity": "high",
+      "message": "all changed Python files parse",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "check",
+      "rule_id": "secret-scan",
+      "rule_type": "secrets",
+      "result": "PASS",
+      "severity": "critical",
+      "message": "no secrets in added lines",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "check",
+      "rule_id": "dependency-change",
+      "rule_type": "dependencies",
+      "result": "NOT_APPLICABLE",
+      "severity": "medium",
+      "message": "no dependency manifests changed",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "check",
+      "rule_id": "test-integrity",
+      "rule_type": "test_integrity",
+      "result": "PASS",
+      "severity": "medium",
+      "message": "no tests removed, weakened or skipped",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "payment-isolation",
+      "rule_type": "forbidden_import",
+      "result": "PASS",
+      "severity": "critical",
+      "message": "no new forbidden dependencies",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "authentication-tests",
+      "rule_type": "policy",
+      "result": "NOT_APPLICABLE",
+      "severity": "high",
+      "message": "no matching changed files",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "public-api-tests",
+      "rule_type": "policy",
+      "result": "NOT_APPLICABLE",
+      "severity": "high",
+      "message": "no matching changed files",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "production-config",
+      "rule_type": "policy",
+      "result": "NOT_APPLICABLE",
+      "severity": "critical",
+      "message": "no matching changed files",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "dangerous-files",
+      "rule_type": "forbidden_path",
+      "result": "PASS",
+      "severity": "critical",
+      "message": "no forbidden paths touched",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "ledger-full-suite",
+      "rule_type": "policy",
+      "result": "NOT_APPLICABLE",
+      "severity": "high",
+      "message": "no matching changed files",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "policy",
+      "rule_id": "change-size",
+      "rule_type": "max_changed_lines",
+      "result": "PASS",
+      "severity": "medium",
+      "message": "2 changed lines (limit 400)",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    },
+    {
+      "source": "tests",
+      "rule_id": "test-run",
+      "rule_type": "tests",
+      "result": "PASS",
+      "severity": "high",
+      "message": "4 passed, 0 skipped, 0 failed",
+      "evidence": [],
+      "on_fail": null,
+      "effect": "NONE"
+    }
+  ],
+  "timings_ms": {
+    "diff": 112,
+    "graph_incremental": 73,
+    "graph_base": 827,
+    "policy_and_checks": 0,
+    "tests": 719,
+    "total": 2360
+  },
+  "audit": {
+    "events": 10,
+    "head_hash": "447c960fc93b6296b62b8ec789575a6d6c3936a220b6df98234653bf30cf6176"
+  },
+  "events": [
+    {
+      "seq": 0,
+      "ts": 1792142835.415,
+      "type": "RUN_CREATED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 1,
+      "ts": 1792142835.417,
+      "type": "POLICY_LOADED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 2,
+      "ts": 1792142835.531,
+      "type": "DIFF_COMPUTED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 3,
+      "ts": 1792142836.471,
+      "type": "GRAPH_UPDATED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 4,
+      "ts": 1792142836.478,
+      "type": "POLICY_EVALUATED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 5,
+      "ts": 1792142836.481,
+      "type": "TEST_PLAN_CREATED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 6,
+      "ts": 1792142836.481,
+      "type": "SANDBOX_STARTED",
+      "actor": "subprocess"
+    },
+    {
+      "seq": 7,
+      "ts": 1792142837.417,
+      "type": "SANDBOX_FINISHED",
+      "actor": "subprocess"
+    },
+    {
+      "seq": 8,
+      "ts": 1792142837.421,
+      "type": "VERDICT_ISSUED",
+      "actor": "reposhield"
+    },
+    {
+      "seq": 9,
+      "ts": 1792142837.422,
+      "type": "RUN_COMPLETED",
+      "actor": "reposhield"
+    }
+  ],
+  "run_dir": "C:/Users/pjpra/Desktop/reposhield/docs/evidence/rs2-11/run-02/synthetic-repository/.git\\reposhield\\runs\\rs_d96da41dd2c15c5d30ff71d5318e3ed4b3919262fd347362f06ecd0b550df9e6\\attempt_9713a75d91d845c49fcc2e39da3bb42b"
+}

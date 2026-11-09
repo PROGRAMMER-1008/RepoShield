@@ -1,0 +1,25 @@
+{
+  "modified": [
+    "reposhield/server/coordinator.py",
+    "pyproject.toml"
+  ],
+  "removed": [],
+  "added": [
+    "reposhield/broker.py",
+    "reposhield/restricted_runner.py",
+    "reposhield/runner_watchdog.py",
+    "reposhield/snapshots.py",
+    "reposhield/server/execution_service.py",
+    "tests/test_broker.py",
+    "tests/test_restricted_execution.py"
+  ],
+  "runner_current_hashes_without_pre_edit_backup": {
+    "runner\\.dockerignore": "44d0797dd6bd32b244ea457b91d8250d162233fcc9829a0a3293a2e093437c39",
+    "runner\\Dockerfile": "0eb5fce5e6df6b5f4bd54d4be33d60ac0bc7dd9be5ec691c4ca8fb4051945cb7",
+    "runner\\Dockerfile.project": "7f4cb5a42792318c85aeb9e61be2afa7c456d0e6e358df0db3c89a917f49e8d3",
+    "runner\\Dockerfile.restricted": "4a4301ec5a88a97690e055361b64426950694d0354983fb67b02946492206bee",
+    "runner\\entry.py": "c5d94851640721c65c5128d63f26b9d831cdf14353080b21bc5efdbe4d538567",
+    "runner\\pytest.ini": "4f2478cdf42d7e2a9493090e9aa62a058ee3a368ba396f03c1fe464728f089bc",
+    "runner\\pytest_entry.py": "0fd27f58bb374b2671af2c75f5f61bdd153af0a8c4e33342650db725979004e5"
+  }
+}

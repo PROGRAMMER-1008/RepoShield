@@ -1,0 +1,5 @@
+*
+!Dockerfile.restricted
+!entry.py
+!pytest.ini
+!pytest_entry.py

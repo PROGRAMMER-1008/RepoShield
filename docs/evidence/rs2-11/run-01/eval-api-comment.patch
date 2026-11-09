@@ -1,0 +1,10 @@
+diff --git a/api/routes.py b/api/routes.py
+index 20dcf81..a94e857 100644
+--- a/api/routes.py
++++ b/api/routes.py
+@@ -18,3 +18,5 @@ def handle(request: dict) -> dict:
+         cents = refund(PAYMENTS, request["payment_id"], request["amount"])
+         return {"status": 200, "refunded_cents": cents}
+     return {"status": 404}
++
++# Synthetic API edit

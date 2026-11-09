@@ -1,0 +1,102 @@
+[
+  {
+    "index": 0,
+    "enqueue_ns": 67892600,
+    "claim_ns": 10788600
+  },
+  {
+    "index": 1,
+    "enqueue_ns": 63664800,
+    "claim_ns": 9038900
+  },
+  {
+    "index": 2,
+    "enqueue_ns": 58008700,
+    "claim_ns": 8839300
+  },
+  {
+    "index": 3,
+    "enqueue_ns": 78281400,
+    "claim_ns": 7812200
+  },
+  {
+    "index": 4,
+    "enqueue_ns": 54032200,
+    "claim_ns": 7684700
+  },
+  {
+    "index": 5,
+    "enqueue_ns": 65850500,
+    "claim_ns": 12268600
+  },
+  {
+    "index": 6,
+    "enqueue_ns": 57039700,
+    "claim_ns": 43538900
+  },
+  {
+    "index": 7,
+    "enqueue_ns": 58480000,
+    "claim_ns": 9139700
+  },
+  {
+    "index": 8,
+    "enqueue_ns": 56776200,
+    "claim_ns": 7223600
+  },
+  {
+    "index": 9,
+    "enqueue_ns": 55519900,
+    "claim_ns": 12681900
+  },
+  {
+    "index": 10,
+    "enqueue_ns": 59425100,
+    "claim_ns": 7814300
+  },
+  {
+    "index": 11,
+    "enqueue_ns": 55815800,
+    "claim_ns": 7857300
+  },
+  {
+    "index": 12,
+    "enqueue_ns": 58657100,
+    "claim_ns": 8577700
+  },
+  {
+    "index": 13,
+    "enqueue_ns": 58997000,
+    "claim_ns": 7419800
+  },
+  {
+    "index": 14,
+    "enqueue_ns": 57472800,
+    "claim_ns": 7999100
+  },
+  {
+    "index": 15,
+    "enqueue_ns": 56339100,
+    "claim_ns": 8716300
+  },
+  {
+    "index": 16,
+    "enqueue_ns": 58005100,
+    "claim_ns": 7670400
+  },
+  {
+    "index": 17,
+    "enqueue_ns": 57918600,
+    "claim_ns": 7479300
+  },
+  {
+    "index": 18,
+    "enqueue_ns": 57321500,
+    "claim_ns": 7445600
+  },
+  {
+    "index": 19,
+    "enqueue_ns": 56464900,
+    "claim_ns": 7017200
+  }
+]

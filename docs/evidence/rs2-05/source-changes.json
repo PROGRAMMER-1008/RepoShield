@@ -1,0 +1,20 @@
+{
+  "modified": [
+    "reposhield/action_policy.py",
+    "reposhield/server/admin.py",
+    "reposhield/server/config.py",
+    "reposhield/server/coordinator.py",
+    "reposhield/server/durable.py",
+    "reposhield/server/identities.py",
+    "pyproject.toml"
+  ],
+  "removed": [],
+  "added": [
+    "reposhield/authorization.py",
+    "reposhield/server/authorization_service.py",
+    "reposhield/server/schema_v3.py",
+    "reposhield/server/signing.py",
+    "reposhield/server/migrations/versions/0003_authorizations.py",
+    "tests/test_authorization.py"
+  ]
+}

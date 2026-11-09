@@ -1,0 +1,21 @@
+{
+  "installation_active": true,
+  "live_binding_enabled": true,
+  "prs": [
+    {
+      "number": 1,
+      "state": "open",
+      "mergeable_state": "clean"
+    },
+    {
+      "number": 2,
+      "state": "open",
+      "mergeable_state": "blocked"
+    },
+    {
+      "number": 3,
+      "state": "open",
+      "mergeable_state": "blocked"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "installed_module": "C:\\Users\\pjpra\\Desktop\\reposhield\\.rs2-release\\ui-candidate-20261017\\clean-env\\Lib\\site-packages\\reposhield\\__init__.py",
+  "image": "postgres:17@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3",
+  "rounds": [
+    {
+      "round": 1,
+      "runs": [
+        {
+          "branch": "pr/docs-only",
+          "verdict": "PASS",
+          "attempt_id": "db4793c62ad54d209eeae59ad6583f97",
+          "checkpoint_id": "d2b700b811b44b6c9cc3414fc8390985",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        },
+        {
+          "branch": "pr/analytics-leak",
+          "verdict": "BLOCK",
+          "attempt_id": "00eec08526ee4553b22fdd4515823182",
+          "checkpoint_id": "fbc9bd91e3634be29288bb957bbb77b7",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        },
+        {
+          "branch": "pr/safe-refactor",
+          "verdict": "REVIEW_REQUIRED",
+          "attempt_id": "bba0d2cdbd8146069989bbd678fd6a5d",
+          "checkpoint_id": "0f5f89a63fd248459828b0e5bdbda108",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        }
+      ],
+      "tables": {
+        "action_requests": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "6f9a82838fbf0609c0cb58746de62b29cc5aa712f5b356872868f8866926a553"
+        },
+        "approvals": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": {
+          "rows": 3,
+          "sha256": "840f28dc45fe15a93e4dd6733be5e01266354acf626fed124f153e384b2b57fa"
+        },
+        "authorizations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "decisions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "events": {
+          "rows": 36,
+          "sha256": "e6e593abdd921f04376ffee7371dee42fc9470f80effa877fdcad2cad26ef5d9"
+        },
+        "evidence_checkpoints": {
+          "rows": 3,
+          "sha256": "7884751f06ff32beab13207ed71a7c3f41f4c74166d32b89780a7e02596665c3"
+        },
+        "executions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_checks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_deliveries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_installations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outbox": {
+          "rows": 3,
+          "sha256": "e67816aae345856cbebfbba824c6ee7e08855fc6d083c0e5b11fd68c7d5b0e43"
+        },
+        "repositories": {
+          "rows": 1,
+          "sha256": "fb78d86f16d162d59a748d66f51335c1b28e38491492b97611247c25dbd326a7"
+        },
+        "runs": {
+          "rows": 3,
+          "sha256": "520443af676d1249702755c01416bb50f05eb8d7c537b32b31d76c6c1143538f"
+        },
+        "session_scopes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "task_dependencies": {
+          "rows": 12,
+          "sha256": "ba836a263bddba0238189e9c8e429bdcbe5c3731d073db48397bd61b95a18c79"
+        },
+        "tasks": {
+          "rows": 15,
+          "sha256": "91c11afaae02f4cd0fdd23179902b19e1bd1de396cf2418ff6783dee88d21757"
+        }
+      },
+      "backup_sha256": "7bdc90dce6f5f9848dec6fd647ac8778bc2cad1f4be869ce64c24cd5a51b4179",
+      "restore_equal": true,
+      "restart_equal": true,
+      "synthetic_key_snapshot_restore": true,
+      "wrong_key_rejected": true
+    },
+    {
+      "round": 2,
+      "runs": [
+        {
+          "branch": "pr/docs-only",
+          "verdict": "PASS",
+          "attempt_id": "f35513dd98f54a67a9b2468be664551c",
+          "checkpoint_id": "294f47df54c4400ea5aae9f352587110",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        },
+        {
+          "branch": "pr/analytics-leak",
+          "verdict": "BLOCK",
+          "attempt_id": "bd1d526a0899401d9f024d05d4c88626",
+          "checkpoint_id": "36871774e2f44f46b527dcc172221cb2",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        },
+        {
+          "branch": "pr/safe-refactor",
+          "verdict": "REVIEW_REQUIRED",
+          "attempt_id": "ff8855cc7ac34d52bc03099f93ec6d5d",
+          "checkpoint_id": "8fc339228c744253902031af1aa548a4",
+          "restored_authenticated": true,
+          "restart_authenticated": true
+        }
+      ],
+      "tables": {
+        "action_requests": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "alembic_version": {
+          "rows": 1,
+          "sha256": "6f9a82838fbf0609c0cb58746de62b29cc5aa712f5b356872868f8866926a553"
+        },
+        "approvals": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": {
+          "rows": 3,
+          "sha256": "e151264d50a24add2899ffb0eec18c5b2c3292042c62256f4135093a0dc400fa"
+        },
+        "authorizations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "decisions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "events": {
+          "rows": 36,
+          "sha256": "a5320193c819845425d3e70b6948e16ba322cd4668f9868727b1a6a2e6853c3a"
+        },
+        "evidence_checkpoints": {
+          "rows": 3,
+          "sha256": "a3f95cba87d321d753c2c111d610c74357a768fb9657fb711177db4703203fb7"
+        },
+        "executions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_checks": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_deliveries": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "github_installations": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outbox": {
+          "rows": 3,
+          "sha256": "bc58b3807784e0ec78ff5e72870d2d9e2d4e886917003464c80f9ed6bb39dfc4"
+        },
+        "repositories": {
+          "rows": 1,
+          "sha256": "f26ad4883341cc8778ac76207ffe9f4393c7bf409d6b04feef6fabb221f0d9f9"
+        },
+        "runs": {
+          "rows": 3,
+          "sha256": "454aec6ee605ecbc439095c80fd138d7ee19154d93a098ad49f748f2189b77d5"
+        },
+        "session_scopes": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "sessions": {
+          "rows": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "task_dependencies": {
+          "rows": 12,
+          "sha256": "04b9bc72a9c586925c9ca2b2da49f1f3405af5b04fe8697f8fb649c98630a73c"
+        },
+        "tasks": {
+          "rows": 15,
+          "sha256": "abefac522cfc8ff386df12913cb7286bc617fd24c806b90edb4a765a27a9ebf4"
+        }
+      },
+      "backup_sha256": "b6e52ba6a60151c21a04ae83c8cecfed3583d5228fdb5f6ae3e2e6d49d7bf372",
+      "restore_equal": true,
+      "restart_equal": true,
+      "synthetic_key_snapshot_restore": true,
+      "wrong_key_rejected": true
+    }
+  ],
+  "scope": "same-host installed-wheel static DAG and database recovery; not full isolated product demo",
+  "synthetic_external_keys_removed": true,
+  "disposable_container_removed": true
+}
