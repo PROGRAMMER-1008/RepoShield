@@ -1,34 +1,5 @@
 # RepoShield
 
-Implementation status: [RS2 01–10 locally, with VM and live GitHub acceptance pending](docs/IMPLEMENTATION_STATUS.md). Both deterministic
-verification and controlled agent execution are release requirements. The current
-command gateway is a development prototype; controlled-session enforcement is not
-yet complete. See the [trust boundaries](docs/THREAT_MODEL.md) before executing code.
-Unsigned gate-cache reuse is disabled; every verification creates a fresh attempt.
-The PostgreSQL coordinator and separate static worker have a
-[local setup guide](docs/LOCAL_COORDINATOR.md). `serve` uses that configuration by
-default; the prior SQLite/HTML service requires `--legacy-dev-server` explicitly.
-The [typed action policy and review API](docs/ACTION_POLICY.md) uses external trusted
-configuration. [Signed authorization and atomic claims](docs/SIGNED_AUTHORIZATION.md)
-are implemented; actual isolated execution remains RS2 06.
-
-RS2 06 now has a [real Docker Desktop development broker](docs/RESTRICTED_EXECUTION.md)
-with signed claims, immutable snapshots and restricted test containers. Dedicated
-Linux VM acceptance remains pending; this is not a completed controlled deployment.
-RS2 07 adds a [real protected synthetic database demonstration](docs/PROTECTED_DATABASE_DEMO.md)
-with policy denial, direct-access checks and independent before/after data hashes.
-Dedicated-host acceptance remains pending for both phases.
-RS2 08 adds [signed evidence and authenticated replay](docs/AUTHENTICATED_EVIDENCE.md)
-with trusted PostgreSQL checkpoints and scoped history. Automatic cache reuse remains disabled.
-RS2 09 adds the [GitHub App and Checks publication path](docs/GITHUB_APP.md), including
-durable signed-webhook intake, scoped installation tokens, live synthetic-repository
-PASS/BLOCK/REVIEW_REQUIRED checks, installation suspension denial/recovery, and a
-real stale-publication race check. Dedicated-host and independent bypass inspection
-remain pending.
-RS2 10 adds the [authenticated product UI](docs/AUTHENTICATED_UI.md) at `/ui`, with
-GitHub organization sign-in, scoped human roles, real run/session history and
-exact-request approval. OAuth sign-in was validated with the synthetic demo org.
-
 **Let AI coding agents move fast without giving them unrestricted authority over your repository.**
 
 RepoShield sits between an AI-generated change and your protected branch. It does *not* ask an LLM whether the code looks good.
